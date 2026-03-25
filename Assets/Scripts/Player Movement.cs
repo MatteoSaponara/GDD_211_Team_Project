@@ -37,7 +37,17 @@ namespace game
         // Update is called once per frame
         void Update()
         {
+            // --- MOVEMENT ---
+            Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
+            controller.Move(move * speed * Time.deltaTime);
 
+            if (controller.isGrounded && velocity.y < 0)
+            {
+                velocity.y = -2f; // small downward force to keep grounded
+            }
+
+            velocity.y += gravity * Time.deltaTime;
+            controller.Move(velocity * Time.deltaTime);
         }
     }
 }
