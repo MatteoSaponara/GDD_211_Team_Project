@@ -223,6 +223,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Level Concept
       objectReference: {fileID: 0}
+    - target: {fileID: 2653559142705682340, guid: 967f9409bf0858042892ccb74d8d81cd, type: 3}
+      propertyPath: sensitivity
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4090998288800120168, guid: 967f9409bf0858042892ccb74d8d81cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
