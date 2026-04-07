@@ -1,0 +1,51 @@
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+namespace Game
+{
+    public class Shooting : MonoBehaviour
+    {
+        [SerializeField] private LineRenderer lr;
+        [SerializeField] private Transform camTrans;
+
+        private List<LineRenderer> lineRenderers = new List<LineRenderer>();
+
+        public void OnShoot(InputAction.CallbackContext context)
+        {
+            Debug.Log($"Shooting {context.performed}");
+            Shoot();
+        }
+
+        public void Shoot()
+        {
+            if (Physics.Raycast(camTrans.position, camTrans.forward, out RaycastHit hit))
+            {
+                // Apply damage / effect
+                Debug.Log("Raycast hit: " + hit);
+
+                //Draw line
+                LineRenderer newLR = Instantiate(lr, transform.position, Quaternion.identity);
+                newLR.SetPositions(new Vector3[]
+                {
+                        camTrans.position + Vector3.down * 0.1f,
+                        hit.point
+                });
+                lineRenderers.Add(newLR);
+            }
+        }
+
+        private void FixedUpdate()
+        {
+            foreach (LineRenderer renderer in lineRenderers)
+            {
+                // fade out lines / destroy
+                if (renderer != null)
+                {
+                    Destroy(renderer.gameObject, 0.5f);
+                }
+            }
+        }
+    }
+}
