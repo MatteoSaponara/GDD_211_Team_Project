@@ -16,7 +16,7 @@ namespace game
             if (context.performed)
             {
                 lookInput = context.ReadValue<Vector2>();
-                Debug.Log("LOOK: " + lookInput);
+                // Debug.Log("LOOK: " + lookInput);
             }
             else if (context.canceled)
             {

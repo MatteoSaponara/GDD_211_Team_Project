@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1740976466247771921}
   - component: {fileID: 707789188461418820}
   - component: {fileID: 171262139861107285}
+  - component: {fileID: 4550421609129736400}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -217,6 +218,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 1c1bd9f1-ad16-4690-8950-f0c415085a19
     m_ActionName: 'Gameplay/Look[/Mouse/delta]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4550421609129736400}
+        m_TargetAssemblyTypeName: Game.Shooting, Assembly-CSharp
+        m_MethodName: OnShoot
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 4c6d435e-2940-4036-9256-9321e16ced93
+    m_ActionName: 'Gameplay/Shoot[/Mouse/leftButton]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard and Mouse
   m_DefaultActionMap: Gameplay
@@ -265,6 +282,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4550421609129736400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569815436922501956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40f2c812c5f5b7240b637151d0250f69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Shooting
+  lr: {fileID: 3217052539972397108, guid: f0ac2af8de4f8a945af976698091f434, type: 3}
+  camTrans: {fileID: 2934986330981756755}
 --- !u!1 &8366792028632483514
 GameObject:
   m_ObjectHideFlags: 0

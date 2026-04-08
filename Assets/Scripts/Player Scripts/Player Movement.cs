@@ -16,7 +16,7 @@ namespace game
         public void OnMove(InputAction.CallbackContext context)
         {
             moveInput = context.ReadValue<Vector2>();
-            Debug.Log($"Move Input: {moveInput}");
+            // Debug.Log($"Move Input: {moveInput}");
         }
 
         public void OnJump(InputAction.CallbackContext context)
