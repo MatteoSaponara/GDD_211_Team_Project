@@ -7,7 +7,9 @@ namespace Game
 {
     public class Shooting : MonoBehaviour
     {
+        [Tooltip("Bullet trail visualizer")]
         [SerializeField] private LineRenderer lr;
+        [Tooltip("Camera position where bullets are fired from")]
         [SerializeField] private Transform camTrans;
 
         private List<LineRenderer> lineRenderers = new List<LineRenderer>();
