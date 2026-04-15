@@ -9,8 +9,7 @@ namespace game
         [SerializeField] private float baseHealth;
 
         private float maxHealth; // Maximum health of the object
-        private float currentHealth; // Current health of the object
-        UnityEvent death;
+        protected float currentHealth; // Current health of the object
 
         private void Start() // Sets currentHealth and maxHealth to baseHealth on Start
         {
@@ -37,13 +36,14 @@ namespace game
             }
         }
 
-        public void TakeDamage(float damage) // Lowers currentHealth by h and invokes the death unity event
+        public virtual void TakeDamage(float damage) // Lowers currentHealth by damage
         {
             currentHealth -= damage;
-            if (currentHealth <= 0)
-            {
-                death.Invoke();
-            }
+        }
+
+        public bool CheckIfDead()
+        {
+            return currentHealth <= 0;
         }
     }
 }

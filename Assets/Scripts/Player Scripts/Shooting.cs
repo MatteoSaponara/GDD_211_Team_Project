@@ -1,3 +1,4 @@
+using game;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -7,10 +8,15 @@ namespace Game
 {
     public class Shooting : MonoBehaviour
     {
+        [Header("References")]
         [Tooltip("Bullet trail visualizer")]
         [SerializeField] private LineRenderer lr;
         [Tooltip("Camera position where bullets are fired from")]
         [SerializeField] private Transform camTrans;
+
+        [Header("Shooting Mechanics")]
+        [Tooltip("The damage each bullet does")]
+        [SerializeField] private float damage;
 
         private List<LineRenderer> lineRenderers = new List<LineRenderer>();
 
@@ -25,7 +31,13 @@ namespace Game
             if (Physics.Raycast(camTrans.position, camTrans.forward, out RaycastHit hit))
             {
                 // Apply damage / effect
-                Debug.Log("Raycast hit: " + hit);
+                // Debug.Log("Raycast hit: " + hit);
+                if (hit.collider.TryGetComponent<Enemy>(out var target))
+                {
+                    Debug.Log("Enemy hit: " + target);
+                    target.TakeDamage(damage);
+                }
+
 
                 //Draw line
                 LineRenderer newLR = Instantiate(lr, transform.position, Quaternion.identity);
@@ -42,7 +54,7 @@ namespace Game
         {
             foreach (LineRenderer renderer in lineRenderers)
             {
-                // fade out lines / destroy
+                // Fade out lines / destroy
                 if (renderer != null)
                 {
                     Destroy(renderer.gameObject, 0.5f);
