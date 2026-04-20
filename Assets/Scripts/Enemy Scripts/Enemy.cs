@@ -3,7 +3,8 @@ using UnityEngine; // Assited with AI
 
 namespace game
 {
-    public class Enemy : MonoBehaviour
+    [RequireComponent(typeof(Health))]
+    public class Enemy : MonoBehaviour, IDamagable
     {
         [Header("References")]
         [Tooltip("Position of the player")]
@@ -16,7 +17,14 @@ namespace game
         [Header("Shooting")]
         [SerializeField] private float fireRate = 1f;
 
+        private Health health; // Health of enemy
+        
         private float fireTimer;
+
+        private void Awake()
+        {
+            health = GetComponent<Health>();
+        }
 
         // Update is called once per frame
         void Update()
@@ -52,6 +60,21 @@ namespace game
             GameObject proj = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
 
             proj.GetComponent<Projectile>().Launch(direction);
+        }
+
+        //Lowers enemy health by damage and calls death
+        public void TakeDamage(float damage)
+        {
+            health.TakeDamage(damage);
+            if (health.CheckIfDead())
+            {
+                Death();
+            }
+        }
+
+        public void Death()
+        {
+            Destroy(gameObject);
         }
     }
 }

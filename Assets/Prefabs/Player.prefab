@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 707789188461418820}
   - component: {fileID: 171262139861107285}
   - component: {fileID: 4550421609129736400}
+  - component: {fileID: 466420519579989873}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -296,6 +297,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Game.Shooting
   lr: {fileID: 3217052539972397108, guid: f0ac2af8de4f8a945af976698091f434, type: 3}
   camTrans: {fileID: 2934986330981756755}
+  damage: 10
+--- !u!114 &466420519579989873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569815436922501956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41ef2c043d7a9e4287490c1895e1238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::game.PlayerHealth
+  baseHealth: 100
+  death:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8366792028632483514
 GameObject:
   m_ObjectHideFlags: 0

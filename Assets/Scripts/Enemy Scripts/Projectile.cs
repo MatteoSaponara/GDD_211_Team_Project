@@ -8,6 +8,8 @@ namespace game
         [SerializeField] private float speed = 10f;
         [Tooltip("How long the projectile travels for")]
         [SerializeField] private float lifetime = 3f;
+        [Tooltip("Damage the projectile does")]
+        [SerializeField] protected float damage = 5f;
 
         private Rigidbody rb;
 
@@ -33,7 +35,8 @@ namespace game
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                //collision.gameObject.GetComponent<PlayerHealth>()?.TakeDamage(1);
+                Debug.Log("The player has been hit!");
+                collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
             }
 
             Destroy(gameObject);
