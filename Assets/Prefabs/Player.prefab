@@ -235,6 +235,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 4c6d435e-2940-4036-9256-9321e16ced93
     m_ActionName: 'Gameplay/Shoot[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4755009474378511543, guid: 641c34f5be8312f4697609f0d872c9c1, type: 3}
+        m_TargetAssemblyTypeName: game.GameManager, Assembly-CSharp
+        m_MethodName: OnPause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 971df939-a165-4a5a-b904-1e423e970478
+    m_ActionName: 'Gameplay/Pause[/Keyboard/p]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard and Mouse
   m_DefaultActionMap: Gameplay
@@ -313,7 +329,19 @@ MonoBehaviour:
   baseHealth: 100
   death:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4755009474378511543, guid: 641c34f5be8312f4697609f0d872c9c1, type: 3}
+        m_TargetAssemblyTypeName: game.GameManager, Assembly-CSharp
+        m_MethodName: GameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8366792028632483514
 GameObject:
   m_ObjectHideFlags: 0
