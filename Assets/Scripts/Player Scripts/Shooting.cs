@@ -23,7 +23,11 @@ namespace Game
         public void OnShoot(InputAction.CallbackContext context)
         {
             Debug.Log($"Shooting {context.performed}");
-            Shoot();
+            if (!GameManager.Instance.isPaused)
+            {
+                Shoot();
+            }
+            
         }
 
         public void Shoot()

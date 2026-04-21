@@ -7,12 +7,12 @@ namespace game
     public class Enemy : MonoBehaviour, IDamagable
     {
         [Header("References")]
-        [Tooltip("Position of the player")]
-        [SerializeField] private Transform player;
         [Tooltip("Spawn point of projectiles")]
         [SerializeField] private Transform firePoint;
         [Tooltip("Prefab of projectile")]
         [SerializeField] private GameObject projectilePrefab;
+        //[Tooltip("Position of the player")]
+        /*[SerializeField]*/ private Transform player;
 
         [Header("Shooting")]
         [SerializeField] private float fireRate = 1f;
@@ -24,6 +24,7 @@ namespace game
         private void Awake()
         {
             health = GetComponent<Health>();
+            player = GameManager.Instance.Player.transform;
         }
 
         // Update is called once per frame
@@ -36,7 +37,7 @@ namespace game
             }
 
             // Makes enemy always face the player
-            Debug.Log("Rotating toward: " + player.position);
+            //Debug.Log("Rotating toward: " + player.position);
             Vector3 lookPos = player.position - transform.position;
             lookPos.y = 0; // prevents tilting
             transform.rotation = Quaternion.LookRotation(lookPos);
@@ -49,6 +50,7 @@ namespace game
                 Shoot();
                 fireTimer = 1f / fireRate;
             }
+            
         }
 
         // Firing of projectile
