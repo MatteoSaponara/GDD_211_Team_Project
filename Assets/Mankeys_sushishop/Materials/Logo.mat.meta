@@ -1,16 +1,8 @@
 fileFormatVersion: 2
-guid: 66125bec55064c242969690e1f9cf5c4
-timeCreated: 1515413459
-licenseType: Store
+guid: 54a054c9764e14e33b871ac25b6d79e4
 NativeFormatImporter:
-  mainObjectFileID: 2100000
+  externalObjects: {}
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 108270
-  packageName: Cartoon Monkeys
-  packageVersion: 1.0
-  assetPath: Assets/Mankeys_sushishop/Materials/Logo.mat
-  uploadId: 223243

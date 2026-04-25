@@ -1,16 +1,8 @@
 fileFormatVersion: 2
-guid: 95bab0baed11ef74aad3f0162b7f07c0
-timeCreated: 1514896475
-licenseType: Store
+guid: 944fb5cf742f841cfa807d91fd7995ea
 NativeFormatImporter:
-  mainObjectFileID: -1
+  externalObjects: {}
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 108270
-  packageName: Cartoon Monkeys
-  packageVersion: 1.0
-  assetPath: Assets/Mankeys_sushishop/Materials/Emission.mat
-  uploadId: 223243

@@ -1,16 +1,8 @@
 fileFormatVersion: 2
-guid: 211180ecbb3617346985d88196313c4b
-timeCreated: 1515412768
-licenseType: Store
+guid: 43b4534cfc95447eb90901bad0f6d193
 NativeFormatImporter:
-  mainObjectFileID: -1
+  externalObjects: {}
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 108270
-  packageName: Cartoon Monkeys
-  packageVersion: 1.0
-  assetPath: Assets/Mankeys_sushishop/Materials/SKy.mat
-  uploadId: 223243

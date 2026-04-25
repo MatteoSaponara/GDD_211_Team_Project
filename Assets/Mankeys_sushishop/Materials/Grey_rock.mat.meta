@@ -1,16 +1,8 @@
 fileFormatVersion: 2
-guid: ba49a79d590ff7d4cb0ce09fd1120c99
-timeCreated: 1515427834
-licenseType: Store
+guid: fbead7184b5574c0c9c25d1b164e5560
 NativeFormatImporter:
-  mainObjectFileID: 2100000
+  externalObjects: {}
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 108270
-  packageName: Cartoon Monkeys
-  packageVersion: 1.0
-  assetPath: Assets/Mankeys_sushishop/Materials/Grey_rock.mat
-  uploadId: 223243

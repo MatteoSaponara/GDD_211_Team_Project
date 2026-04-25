@@ -1,16 +1,8 @@
 fileFormatVersion: 2
 guid: bdd43058ada52f241aadbab5a78e66c6
-timeCreated: 1514646955
-licenseType: Store
 NativeFormatImporter:
-  mainObjectFileID: 2100000
+  externalObjects: {}
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 108270
-  packageName: Cartoon Monkeys
-  packageVersion: 1.0
-  assetPath: Assets/Mankeys_sushishop/Materials/cocont.mat
-  uploadId: 223243

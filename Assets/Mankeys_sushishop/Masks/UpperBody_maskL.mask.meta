@@ -1,16 +1,8 @@
 fileFormatVersion: 2
-guid: 54168101d15363c40a82af913ad1fe6d
-timeCreated: 1514458852
-licenseType: Store
+guid: 876f3730710f04bf7b78941b203c801f
 NativeFormatImporter:
-  mainObjectFileID: 31900000
+  externalObjects: {}
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 108270
-  packageName: Cartoon Monkeys
-  packageVersion: 1.0
-  assetPath: Assets/Mankeys_sushishop/Masks/UpperBody_maskL.mask
-  uploadId: 223243
