@@ -1,4 +1,4 @@
-using game; // Asked google search result AI how to make coroutine for reloading
+using game; // Asked google search result AI how to make coroutine for reloading and firerate
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -29,23 +29,27 @@ namespace Game
         [SerializeField] private float pelletsPerShot;
         [Tooltip("Distance pellets deviate")]
         [SerializeField] private float inaccuracyDeviation;
+        [Tooltip("Cooldown between shots in seconds")]
+        [SerializeField] private float fireRate;
 
         // Amount of ammo currently loaded
         private float currentAmmo;
-
         // Determines if gun is reloading
         private bool reloading = false;
         // Determines if reloading coroutine is running
         private bool reloadCouroutine = false;
+        // In game time of when gun was last fired
+        private float timeOfLastShot = 0;
 
         private List<LineRenderer> lineRenderers = new List<LineRenderer>();
         
         public void OnShoot(InputAction.CallbackContext context)
         {
             Debug.Log($"Shooting {context.performed}");
-            if (!GameManager.Instance.isPaused && currentAmmo > 0)
+            if (!GameManager.instance.isPaused && currentAmmo > 0 && Time.time - timeOfLastShot > fireRate)
             {
                 Shoot();
+                timeOfLastShot = Time.time;
             }
             else
             {
@@ -57,7 +61,7 @@ namespace Game
         public void OnReload(InputAction.CallbackContext context)
         {
             Debug.Log($"Reloading {context.performed}");
-            if (!GameManager.Instance.isPaused && currentAmmo < maxAmmo)
+            if (!GameManager.instance.isPaused && currentAmmo < maxAmmo)
             {
                 Reload();
             }

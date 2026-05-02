@@ -376,6 +376,7 @@ MonoBehaviour:
   reloadTime: 0.5
   pelletsPerShot: 9
   inaccuracyDeviation: 0.5
+  fireRate: 0.5
 --- !u!114 &466420519579989873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,6 +405,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  debugInvincibility: 0
 --- !u!1 &3823086457084313514
 GameObject:
   m_ObjectHideFlags: 0

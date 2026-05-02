@@ -31,8 +31,8 @@ namespace game
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
-            //GameManager.Instance.Player = this.gameObject; // Assigns Player prefab to Player reference in Game Manager DOESNT ACTUALLY WORK
-            //Debug.Log("Player movement start: " + GameManager.Instance.Player);
+            GameManager.instance.player = this.gameObject;
+            Debug.Log("Player movement start: " + GameManager.instance.player);
             controller = GetComponent<CharacterController>();
         }
 
