@@ -1,4 +1,4 @@
-using UnityEngine;
+using UnityEngine; // Asked AI how to properly auto assign the player to Game Manager
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
@@ -8,9 +8,9 @@ namespace game
     public class GameManager : MonoBehaviour
     {
         // Singleton pattern
-        public static GameManager Instance;
+        public static GameManager instance;
 
-        public GameObject Player;
+        public GameObject player;
 
         public bool isPaused;
         public SoundManager SoundManager => SoundManager;
@@ -26,9 +26,9 @@ namespace game
 
         private void Awake()
         {
-            if (Instance == null)
+            if (instance == null)
             {
-                Instance = this;
+                instance = this;
                 isPaused = false;
             }
             else
@@ -36,6 +36,20 @@ namespace game
                 Debug.LogError("Two Instances! !");
             }
             DontDestroyOnLoad(gameObject);
+        }
+
+        private void Start()
+        {
+            player = GameObject.FindWithTag("Player");
+
+            if (player == null)
+            {
+                Debug.LogError("Player was not found");
+            }
+            else
+            {
+                Debug.Log("Player found");
+            }
         }
 
 

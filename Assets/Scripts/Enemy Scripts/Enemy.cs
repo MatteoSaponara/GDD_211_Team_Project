@@ -23,8 +23,16 @@ namespace game
 
         private void Awake()
         {
-            health = GetComponent<Health>();
-            player = GameManager.Instance.Player.transform;
+            health = GetComponent<Health>(); // Sets health to the enemy's health component
+        }
+
+        private void Start()
+        {
+            player = GameManager.instance.player.transform;
+            if (player != null)
+            {
+                Debug.Log("Player found by enemy");
+            }
         }
 
         // Update is called once per frame
