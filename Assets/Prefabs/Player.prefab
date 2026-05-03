@@ -39,7 +39,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2934986330981756755}
-  - {fileID: 9177269834770625144}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2550103675781632123
@@ -377,6 +376,7 @@ MonoBehaviour:
   pelletsPerShot: 9
   inaccuracyDeviation: 0.5
   fireRate: 0.5
+  pelletTrail: 0.15
 --- !u!114 &466420519579989873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,13 +461,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5194283765618298933}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4925267, y: -0.036, z: 1.260192}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.4925267, y: -0.536, z: 1.260192}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7990598232823825092}
-  m_Father: {fileID: 1534449556550289855}
+  m_Father: {fileID: 2934986330981756755}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8366792028632483514
 GameObject:
@@ -501,7 +501,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 9177269834770625144}
   m_Father: {fileID: 1534449556550289855}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &2075336404710802947
