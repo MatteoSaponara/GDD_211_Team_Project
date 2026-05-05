@@ -56,7 +56,7 @@ namespace Game
             }
             else
             {
-                Debug.Log("If game is not paused, ammo is 0");
+                // Debug.Log("If game is not paused, ammo is 0");
             }
             
         }
