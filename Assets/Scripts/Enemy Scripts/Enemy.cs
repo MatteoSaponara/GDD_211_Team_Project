@@ -8,15 +8,15 @@ namespace game
     public abstract class Enemy : MonoBehaviour, IDamagable
     {
         [Header("Stats")]
-        [Tooltip("The speed of the enemy")]
+        [Tooltip("The speed of the enemy.")]
         [SerializeField] protected float moveSpeed;
-        [Tooltip("The rannge at which the enemy will chase if the player if they are not within")]
+        [Tooltip("The range at which the enemy will chase the player if they are not within.")]
         [SerializeField] protected float chaseRange;
 
         [Header("Damage Flash")]
-        [Tooltip("Color of damage flash")]
+        [Tooltip("Color of damage flash.")]
         [SerializeField] private Color flashColor = Color.red;
-        [Tooltip("Length of damage flash")]
+        [Tooltip("Length of damage flash.")]
         [SerializeField] private float flashDuration = 0.1f;
 
         // Mesh renderer of GameObject

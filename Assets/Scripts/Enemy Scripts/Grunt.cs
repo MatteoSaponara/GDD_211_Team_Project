@@ -5,13 +5,13 @@ namespace game
     public class Grunt : Enemy
     {
         [Header("References")]
-        [Tooltip("Spawn point of projectiles")]
+        [Tooltip("Spawn point of projectiles.")]
         [SerializeField] private Transform firePoint;
-        [Tooltip("Prefab of projectile")]
+        [Tooltip("Prefab of projectile.")]
         [SerializeField] private GameObject projectilePrefab;
 
         [Header("Shooting")]
-        [Tooltip("Firerate of enemy projectiles")]
+        [Tooltip("Firerate of enemy projectiles.")]
         [SerializeField] private float fireRate = 1f;
 
         private float fireTimer;
