@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1890563585736301473}
   - component: {fileID: 5047727021076329143}
   - component: {fileID: 3578719905100934029}
-  - component: {fileID: 1099462127247912847}
   - component: {fileID: 6564462219642405944}
+  - component: {fileID: 1099462127247912847}
   m_Layer: 0
   m_Name: Grunt
   m_TagString: Enemy
@@ -117,19 +117,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1099462127247912847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662789286321915833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ab512d9aefd51b409491607cc6bf713, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::game.Health
-  baseHealth: 150
 --- !u!114 &6564462219642405944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,12 +130,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::game.Grunt
   moveSpeed: 5
-  chaseRange: 15
+  chaseRange: 10
   flashColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.1
   firePoint: {fileID: 6360550579984451703}
   projectilePrefab: {fileID: 25310319884533749, guid: d003af0e9cde6d54387209fa6bdb3fa4, type: 3}
   fireRate: 1
+--- !u!114 &1099462127247912847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662789286321915833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ab512d9aefd51b409491607cc6bf713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::game.Health
+  baseHealth: 150
 --- !u!1 &2343893880753085619
 GameObject:
   m_ObjectHideFlags: 0
