@@ -36,6 +36,7 @@ namespace game
                 Debug.LogError("Two Instances! !");
             }
             DontDestroyOnLoad(gameObject);
+            player = GameObject.FindWithTag("Player");
         }
 
         private void Start()

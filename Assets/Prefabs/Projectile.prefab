@@ -132,8 +132,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666b94487dcd8a749a151f5459ab5ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::game.Projectile
-  speed: 10
+  speed: 12.5
   lifetime: 100
+  damage: 5
 --- !u!135 &1107791210892909757
 SphereCollider:
   m_ObjectHideFlags: 0
