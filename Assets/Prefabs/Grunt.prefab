@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3578719905100934029}
   - component: {fileID: 6564462219642405944}
   - component: {fileID: 1099462127247912847}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grunt
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 2538702725851808317}
   - component: {fileID: 8921549947476265247}
   - component: {fileID: 5781780476525729253}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6360550579984451703}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fire Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}

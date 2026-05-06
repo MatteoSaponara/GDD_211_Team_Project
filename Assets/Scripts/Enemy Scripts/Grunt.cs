@@ -2,7 +2,7 @@ using UnityEngine; // Assited with AI
 
 namespace game
 {
-    public class Grunt : Enemy
+    public class Grunt : Enemy 
     {
         [Header("References")]
         [Tooltip("Spawn point of projectiles.")]
