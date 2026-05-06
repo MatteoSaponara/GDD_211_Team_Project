@@ -81,13 +81,18 @@ namespace game
                 if (health == null)
                     continue;
 
+                var controller = hit.GetComponentInParent<CharacterController>();
+
+                if (controller != null && !controller.isGrounded)
+                    continue;
+
                 // Prevents multiple hits
                 if (hitTargets.Contains(health))
                     continue;
 
                 hitTargets.Add(health);
 
-                Debug.Log("Shockwave dealt damage to the player!");
+                Debug.Log("Shockwave dealt damage to the player: " + damage);
 
                 health.TakeDamage(damage);
             }

@@ -15,7 +15,7 @@ namespace game
 
             float scale = radius * 2f;
 
-            transform.localScale = new Vector3(scale, 0.2f, scale);
+            transform.localScale = new Vector3(scale, 1f, scale);
 
             // Keeps shockwave grounded
             Vector3 pos = transform.position;

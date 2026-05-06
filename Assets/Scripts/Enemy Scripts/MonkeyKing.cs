@@ -30,7 +30,7 @@ namespace game
         public override void Update()
         {
             base.Update();
-            if (Vector3.Distance(transform.position, player.position) >= chaseRange)
+            if (Vector3.Distance(transform.position, player.position) >= chaseRange && !isAttacking && !onCooldown)
             {
                 transform.position += transform.forward * moveSpeed * Time.deltaTime;
             }
@@ -84,6 +84,7 @@ namespace game
                 var health = hit.GetComponent<PlayerHealth>();
                 if (health != null)
                 {
+                    Debug.Log("King slam deals " + impactDamage + " damage to the player");
                     health.TakeDamage(impactDamage);
                 }
                 else
