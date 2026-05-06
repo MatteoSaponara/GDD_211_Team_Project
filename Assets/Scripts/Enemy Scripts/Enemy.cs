@@ -25,8 +25,7 @@ namespace game
         // Original color of GameObject
         private Color originalColor;
 
-        //[Tooltip("Position of the player")]
-        /*[SerializeField]*/ protected Transform player;
+        protected Transform player;
 
         private Health health; // Health of enemy
 
@@ -75,7 +74,7 @@ namespace game
             transform.rotation = Quaternion.LookRotation(lookPos);
         }
 
-        // Firing of projectile
+        // Basic attack of the enemy
         public virtual void BaseAttack()
         {
 

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 171262139861107285}
   - component: {fileID: 4550421609129736400}
   - component: {fileID: 466420519579989873}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2870246037330821380}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,7 +446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9177269834770625144}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -482,7 +482,7 @@ GameObject:
   - component: {fileID: 1848655673261550362}
   - component: {fileID: 2174645082791627600}
   - component: {fileID: 2973372732316640393}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,6 +677,30 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 178c1790603fe42a38c432cbdfa3358f, type: 3}
       propertyPath: m_Name
       value: UglyShotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 178c1790603fe42a38c432cbdfa3358f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214824004972775095, guid: 178c1790603fe42a38c432cbdfa3358f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766212503428324877, guid: 178c1790603fe42a38c432cbdfa3358f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3825476767833321780, guid: 178c1790603fe42a38c432cbdfa3358f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530701255766440318, guid: 178c1790603fe42a38c432cbdfa3358f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619225641134156614, guid: 178c1790603fe42a38c432cbdfa3358f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
