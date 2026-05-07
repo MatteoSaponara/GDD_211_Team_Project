@@ -1,4 +1,3 @@
-using game; // Asked google search result AI how to make coroutine for reloading and firerate. Asked ChatGPT for proper trail destruction
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -8,9 +7,9 @@ using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using TMPro;
 
-namespace Game
+namespace game
 {
-    public class Shooting : MonoBehaviour
+    public class Shooting : MonoBehaviour // Asked google search result AI how to make coroutine for reloading and firerate. Asked ChatGPT for proper trail destruction
     {
         [Header("References")]
         [Tooltip("Bullet trail visualizer")]
@@ -234,6 +233,12 @@ namespace Game
         private void UpdateAmmoUI()
         {
             ammoText.text = currentAmmo + " / " + maxAmmo;
+        }
+
+        public void ChangeFireRate()
+        {
+            fireRate = fireRate * 2;
+            Debug.Log("Firerate changed: " + fireRate);
         }
     }
 }
