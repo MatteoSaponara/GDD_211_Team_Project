@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Game Art/Materials/Ring 1.mat.meta
 guid: c9c5a11dee927b34cbef53bc8f52e02b
+=======
+guid: 11a83e5fddd7c4da8ad0e5690c9d75c0
+>>>>>>> Art:Assets/Readme.asset.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000

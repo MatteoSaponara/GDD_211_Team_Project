@@ -1,6 +1,13 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Day-Night Skyboxes.meta
 guid: dd5ffe98fda83ee4183ea458e0637ec0
 folderAsset: yes
+========
+guid: 1e201f9944d374e998429e5aa0f0e2f1
+folderAsset: yes
+timeCreated: 1509071275
+licenseType: Store
+>>>>>>>> Art:Assets/SkySeries Freebie/ExampleScenes 2.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

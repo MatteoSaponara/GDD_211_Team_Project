@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2e8305f6b5221c34f9ead12ee01ddbb6
+timeCreated: 1469416838
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67914
+  packageName: Low Poly Wood Club
+  packageVersion: 1.0
+  assetPath: Assets/Low Poly Wood Club/Materials/woodClub_Shader.mat
+  uploadId: 133095

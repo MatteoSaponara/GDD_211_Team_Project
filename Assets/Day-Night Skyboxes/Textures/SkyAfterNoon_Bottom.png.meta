@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Bottom.png.meta
 guid: b6ef619cfefbc3a48bfe3a846f9adb9a
+========
+guid: 320ea2a66f060e943bcec8de145870d0
+>>>>>>>> Art:Assets/Stage Materials/Templefloor.jpg.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,9 +41,15 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
+<<<<<<<< HEAD:Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Bottom.png.meta
     wrapU: 1
     wrapV: 1
     wrapW: 1
+========
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+>>>>>>>> Art:Assets/Stage Materials/Templefloor.jpg.meta
   nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
@@ -63,9 +73,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform

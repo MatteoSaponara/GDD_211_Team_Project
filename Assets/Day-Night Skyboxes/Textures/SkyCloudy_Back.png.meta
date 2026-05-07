@@ -1,5 +1,16 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Day-Night Skyboxes/Textures/SkyCloudy_Back.png.meta
 guid: fc3b33a42f371924590f4be9850f78ae
+========
+guid: d4e4f148fcbcfd2438a0564b5f98d577
+AssetOrigin:
+  serializedVersion: 1
+  productId: 108270
+  packageName: Cartoon Monkeys
+  packageVersion: 1.0
+  assetPath: Assets/Mankeys_sushishop/textures/Monkey_diff_tex_asym.png
+  uploadId: 223243
+>>>>>>>> Art:Assets/Monkey_Enemy/textures/Monkey_diff_tex_asym.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -7,7 +18,11 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
+<<<<<<<< HEAD:Assets/Day-Night Skyboxes/Textures/SkyCloudy_Back.png.meta
     sRGBTexture: 1
+========
+    sRGBTexture: 0
+>>>>>>>> Art:Assets/Monkey_Enemy/textures/Monkey_diff_tex_asym.png.meta
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -37,9 +52,15 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
+<<<<<<<< HEAD:Assets/Day-Night Skyboxes/Textures/SkyCloudy_Back.png.meta
     wrapU: 1
     wrapV: 1
     wrapW: 1
+========
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+>>>>>>>> Art:Assets/Monkey_Enemy/textures/Monkey_diff_tex_asym.png.meta
   nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
@@ -54,7 +75,11 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
+<<<<<<<< HEAD:Assets/Day-Night Skyboxes/Textures/SkyCloudy_Back.png.meta
   textureType: 0
+========
+  textureType: 1
+>>>>>>>> Art:Assets/Monkey_Enemy/textures/Monkey_diff_tex_asym.png.meta
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -83,6 +108,7 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
+<<<<<<<< HEAD:Assets/Day-Night Skyboxes/Textures/SkyCloudy_Back.png.meta
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -96,6 +122,8 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
+========
+>>>>>>>> Art:Assets/Monkey_Enemy/textures/Monkey_diff_tex_asym.png.meta
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
