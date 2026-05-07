@@ -1,4 +1,5 @@
 using Game;
+using System;
 using System.Collections;
 using UnityEngine; // Assited with AI
 
@@ -7,6 +8,8 @@ namespace game
     [RequireComponent(typeof(Health))]
     public abstract class Enemy : MonoBehaviour, IDamagable
     {
+        public static event Action<Enemy> OnEnemyKilled;
+
         [Header("Stats")]
         [Tooltip("The speed of the enemy.")]
         [SerializeField] protected float moveSpeed;
@@ -19,6 +22,8 @@ namespace game
         [Tooltip("Length of damage flash.")]
         [SerializeField] private float flashDuration = 0.1f;
 
+        
+         
         // Mesh renderer of GameObject
         private Renderer rend;
 
@@ -27,7 +32,11 @@ namespace game
 
         protected Transform player;
 
-        private Health health; // Health of enemy
+        // Health of enemy
+        private Health health;
+
+        // Determines if the enemy is dead
+        private bool isDead = false;
 
         private void Awake()
         {
@@ -94,6 +103,14 @@ namespace game
         // Kills the enemy
         public virtual void Death()
         {
+            if (isDead)
+            {
+                return;
+            }
+
+            isDead = true;
+
+            OnEnemyKilled?.Invoke(this);
             Destroy(gameObject);
         }
 

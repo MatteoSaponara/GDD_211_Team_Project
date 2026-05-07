@@ -374,7 +374,7 @@ MonoBehaviour:
   maxAmmo: 6
   reloadTime: 0.5
   pelletsPerShot: 9
-  inaccuracyDeviation: 0.5
+  inaccuracyDeviation: 0.1
   fireRate: 0.5
   pelletTrail: 0.15
 --- !u!114 &466420519579989873

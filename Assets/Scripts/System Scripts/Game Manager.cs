@@ -90,7 +90,7 @@ namespace game
         }
     }
 
-    public class SoundManager
+    public class SoundManager : MonoBehaviour
     {
         public void GunShotSound()
         {
@@ -98,12 +98,7 @@ namespace game
         }
     }
 
-    public class WaveManager
-    {
-
-    }
-
-    public class ChallengeManager
+    public class ChallengeManager : MonoBehaviour
     {
 
     }
