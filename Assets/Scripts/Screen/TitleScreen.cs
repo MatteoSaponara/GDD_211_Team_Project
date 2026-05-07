@@ -5,6 +5,6 @@ public class TitleScreenUI : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Dante Test Scene"); 
+        SceneManager.LoadScene("Final"); 
     }
 }

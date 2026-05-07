@@ -382,7 +382,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome to Project Ape
+  m_text: 'Project Ape
 
 '
   m_isRightToLeft: 0
