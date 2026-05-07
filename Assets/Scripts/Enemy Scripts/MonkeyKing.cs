@@ -96,8 +96,8 @@ namespace game
 
         public override void Death()
         {
-            base.Death();
             SceneManager.LoadScene("Win Screen");
+            base.Death();
         }
 
         // Gizmo for initial slam hitbox
