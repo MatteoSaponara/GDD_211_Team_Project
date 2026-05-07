@@ -1,0 +1,192 @@
+{
+  "Nodes": [
+    {
+      "Annotation": "all_tundra_nodes",
+      "DisplayName": null,
+      "Inputs": [],
+      "InputFlags": [],
+      "Outputs": [],
+      "OutputFlags": [],
+      "ToBuildDependencies": [
+        1,
+        2
+      ],
+      "DebugActionIndex": 0
+    },
+    {
+      "Annotation": "ScriptAssemblies",
+      "DisplayName": null,
+      "Inputs": [],
+      "InputFlags": [],
+      "Outputs": [],
+      "OutputFlags": [],
+      "DebugActionIndex": 1
+    },
+    {
+      "Annotation": "ScriptAssembliesAndTypeDB",
+      "DisplayName": null,
+      "Inputs": [],
+      "InputFlags": [],
+      "Outputs": [],
+      "OutputFlags": [],
+      "ToBuildDependencies": [
+        1
+      ],
+      "DebugActionIndex": 2
+    }
+  ],
+  "FileSignatures": [
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Bee.BuildTools.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Bee.Core.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Bee.CSharpSupport.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Bee.DotNet.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Bee.NativeProgramSupport.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Bee.Stevedore.Program.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Bee.TinyProfiler2.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Bee.Toolchain.GNU.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Bee.Toolchain.LLVM.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Bee.Toolchain.VisualStudio.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Bee.Toolchain.Xcode.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Bee.Tools.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Bee.TundraBackend.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Bee.VisualStudioSolution.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/BeeBuildProgramCommon.Data.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/BeeBuildProgramCommon.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Newtonsoft.Json.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/NiceIO.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/PlayerBuildProgramLibrary.Data.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/PlayerBuildProgramLibrary.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/ScriptCompilationBuildProgram.Data.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/ScriptCompilationBuildProgram.exe"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/SharpYaml.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Unity.Api.Attributes.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Unity.Cecil.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Unity.Cecil.Mdb.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Unity.Cecil.Pdb.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Unity.Cecil.Rocks.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Unity.IL2CPP.Api.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Unity.IL2CPP.Bee.BuildLogic.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.Data.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Unity.Linker.Api.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/Unity.Options.dll"
+    },
+    {
+      "File": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline/UnityEditor.iOS.Extensions.Xcode.dll"
+    },
+    {
+      "File": "Library/Bee/200b0aE-inputdata.json"
+    }
+  ],
+  "StatSignatures": [
+    {
+      "File": "Assets/csc.rsp"
+    },
+    {
+      "File": "Assets/mcs.rsp"
+    },
+    {
+      "File": "Library/Bee/200b0aE-inputdata.json"
+    }
+  ],
+  "GlobSignatures": [
+    {
+      "Path": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2025/GDD 200/6000.3.5f2/Unity.app/Contents/Resources/BuildPipeline"
+    }
+  ],
+  "ContentDigestExtensions": [
+    ".rsp",
+    ".dll",
+    ".exe",
+    ".pdb",
+    ".json",
+    ".csproj"
+  ],
+  "StructuredLogFileName": "Library/Bee/tundra.log.json",
+  "StateFileName": "Library/Bee/TundraBuildState.state",
+  "StateFileNameTmp": "Library/Bee/TundraBuildState.state.tmp",
+  "StateFileNameMapped": "Library/Bee/TundraBuildState.state.map",
+  "ScanCacheFileName": "Library/Bee/tundra.scancache",
+  "ScanCacheFileNameTmp": "Library/Bee/tundra.scancache.tmp",
+  "DigestCacheFileName": "Library/Bee/tundra.digestcache",
+  "DigestCacheFileNameTmp": "Library/Bee/tundra.digestcache.tmp",
+  "CachedNodeOutputDirectoryName": "Library/Bee/CachedNodeOutput",
+  "EmitDataForBeeWhy": 0,
+        "NamedNodes": {
+          "all_tundra_nodes": 0,
+          "ScriptAssemblies": 1,
+          "ScriptAssembliesAndTypeDB": 2
+        }
+,  "DefaultNodes": [
+    0
+  ],
+  "SharedResources": [],
+  "Scanners": [],
+  "Identifier": "Library/Bee/200b0aE.dag.json",
+  "PayloadsFile": "/Users/glennfrancis/Documents/College Stuff/QU Spring Semester 2026/GDD/GDD_211_Team_Project/Assets/Library/Bee/200b0aE.dag.payloads",
+  "RelativePathToRoot": "../.."
+}
