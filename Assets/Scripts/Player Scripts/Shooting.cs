@@ -1,10 +1,12 @@
 using game; // Asked google search result AI how to make coroutine for reloading and firerate. Asked ChatGPT for proper trail destruction
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using TMPro;
 
 namespace Game
 {
@@ -17,6 +19,8 @@ namespace Game
         [SerializeField] private Transform muzzle;
         [Tooltip("Camera position where raycasts come from")]
         [SerializeField] private Transform camTrans;
+        [Tooltip("Ammo UI Text")]
+        [SerializeField] private TextMeshProUGUI ammoText;
 
         [Header("Shooting Mechanics")]
         [Tooltip("The damage each bullet does")]
@@ -74,6 +78,7 @@ namespace Game
         {
             reloading = false;
             currentAmmo--; // Decreases ammo
+            UpdateAmmoUI();
             Debug.Log("Ammo spent");
 
             for (int i = 0; i < pelletsPerShot /* -1 */; i++) // Uncomment code for consistent middle pellet
@@ -124,6 +129,7 @@ namespace Game
         private void Start()
         {
             currentAmmo = maxAmmo;
+            UpdateAmmoUI();
         }
 
         private void Update()
@@ -178,8 +184,12 @@ namespace Game
             while(reloading && currentAmmo < maxAmmo)
             {
                 yield return new WaitForSeconds(reloadTime);
-                currentAmmo++;
-                Debug.Log("Ammo: " + currentAmmo + "/" + maxAmmo);
+                if (reloading)
+                {
+                    currentAmmo++;
+                    UpdateAmmoUI();
+                    Debug.Log("Ammo: " + currentAmmo + "/" + maxAmmo);
+                }
             }
             reloadCouroutine = false;
         }
@@ -219,6 +229,11 @@ namespace Game
 
             public Color startColor;
             public Color endColor;
+        }
+
+        private void UpdateAmmoUI()
+        {
+            ammoText.text = currentAmmo + " / " + maxAmmo;
         }
     }
 }
