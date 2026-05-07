@@ -848,8 +848,8 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: GDD_211_Team_Project
-  metroPackageVersion: 
+  metroPackageName: GDD211TeamProject
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -857,7 +857,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: GDD_211_Team_Project
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: GDD_211_Team_Project
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
