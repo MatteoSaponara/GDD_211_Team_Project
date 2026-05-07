@@ -10,6 +10,8 @@ namespace game
         [Header("Initial Setup")]
         [Tooltip("Initial enemies in the scene")]
         [SerializeField] private List<Enemy> startingEnemies;
+        [Tooltip("Model of the Boss on the throne that will be deactivated once the Boss wave starts.")]
+        [SerializeField] private GameObject bossModel;
 
         [Header("Wave Settings")]
         [Tooltip("Prefab of the enemies.")]
@@ -68,10 +70,15 @@ namespace game
             if (!bossSpawned)
             {
                 waveIndex++;
+                if (waveIndex == 1)
+                {
+                    GameManager.instance.ChallengeManager.StartChallenge();
+                }
                 if (waveIndex >= wavesBeforeBoss)
                 {
                     SpawnBossWave();
                     SpawnEnemies(3);
+                    bossModel.gameObject.SetActive(false);
                     yield break;
                 }
                 else
