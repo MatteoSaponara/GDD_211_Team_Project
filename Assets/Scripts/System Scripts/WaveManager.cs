@@ -10,7 +10,7 @@ namespace game
         [Header("Initial Setup")]
         [Tooltip("Initial enemies in the scene")]
         [SerializeField] private List<Enemy> startingEnemies;
-        [Tooltip("Model of the Boss on the throne that will be deactivated once the Boss wave starts.")]
+        [Tooltip("Model of the boss on the throne that will be deactivated once the Boss wave starts.")]
         [SerializeField] private GameObject bossModel;
 
         [Header("Wave Settings")]
@@ -78,7 +78,7 @@ namespace game
                 {
                     SpawnBossWave();
                     SpawnEnemies(3);
-                    bossModel.gameObject.SetActive(false);
+                    bossModel.gameObject.SetActive(false); // Deactivates boss model
                     yield break;
                 }
                 else
