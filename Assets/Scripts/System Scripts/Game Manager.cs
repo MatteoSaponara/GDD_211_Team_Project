@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine; // Asked AI how to properly auto assign the player to Game Manager
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -13,9 +14,9 @@ namespace game
         public GameObject player;
 
         public bool isPaused;
-        public SoundManager SoundManager => SoundManager;
-        public WaveManager WaveManager => WaveManager;
-        public ChallengeManager ChallengeManager => ChallengeManager;
+        public SoundManager SoundManager => soundManager;
+        public WaveManager WaveManager => waveManager;
+        public ChallengeManager ChallengeManager => challengeManager;
 
         [Tooltip("Sound manager that plays all of the game's sounds")]
         [SerializeField] private SoundManager soundManager;
@@ -96,10 +97,5 @@ namespace game
         {
 
         }
-    }
-
-    public class ChallengeManager : MonoBehaviour
-    {
-
     }
 }
