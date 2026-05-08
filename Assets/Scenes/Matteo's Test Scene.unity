@@ -391,6 +391,63 @@ PrefabInstance:
       addedObject: {fileID: 1047695384}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f64fefd0e3a42943a8df4bd04d95847, type: 3}
+--- !u!1001 &318176783
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2914863526290930964, guid: 54d96b95ab094ac478b19d14302896aa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.36058
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914863526290930964, guid: 54d96b95ab094ac478b19d14302896aa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914863526290930964, guid: 54d96b95ab094ac478b19d14302896aa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.28023
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914863526290930964, guid: 54d96b95ab094ac478b19d14302896aa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914863526290930964, guid: 54d96b95ab094ac478b19d14302896aa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914863526290930964, guid: 54d96b95ab094ac478b19d14302896aa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914863526290930964, guid: 54d96b95ab094ac478b19d14302896aa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914863526290930964, guid: 54d96b95ab094ac478b19d14302896aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914863526290930964, guid: 54d96b95ab094ac478b19d14302896aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914863526290930964, guid: 54d96b95ab094ac478b19d14302896aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3887967030318577831, guid: 54d96b95ab094ac478b19d14302896aa, type: 3}
+      propertyPath: m_Name
+      value: Monkey King
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 54d96b95ab094ac478b19d14302896aa, type: 3}
 --- !u!4 &411779240 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3514020801038622581, guid: 8f64fefd0e3a42943a8df4bd04d95847, type: 3}
@@ -859,3 +916,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 2071068819}
   - {fileID: 285828360}
+  - {fileID: 318176783}
