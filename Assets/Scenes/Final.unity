@@ -561,7 +561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1934629788480550781, guid: 4de601c27925ca64695dce7dcd72a26a, type: 3}
       propertyPath: requiredStillTime
-      value: 2.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4324849950540706823, guid: 4de601c27925ca64695dce7dcd72a26a, type: 3}
       propertyPath: speed
