@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: 40b99e36068412444bce3dff77a48f84
   - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: 3ad55c3c6367e1841b0fd64bcd183f7d
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: a338ca3752d95f143a8a90b4a5598ec9
+  - enabled: 0
     path: Assets/Scenes/Dante Test Scene.unity
     guid: a044f246ab3e4fb4a897c48a54d03d5a
   - enabled: 0
@@ -17,9 +23,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Matteo's Test Scene.unity
     guid: 8835b86a5b2905245ae2c71932970f5a
-  - enabled: 1
-    path: Assets/Scenes/WinScreen.unity
-    guid: a338ca3752d95f143a8a90b4a5598ec9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
