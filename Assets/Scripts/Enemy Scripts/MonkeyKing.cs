@@ -24,25 +24,15 @@ namespace game
         [Tooltip("Length of the slam animation.")]
         [SerializeField] private float slamAnimationLength = 3f;
 
-        [Tooltip("When the impact happens during the slam animation.")]
-        [SerializeField] private float impactTime = 0.6f;
-
         private Animator animator; // Animator of the Monkey King
 
         private bool isAttacking = false; // Determines if the Monkey King is attacking
         private bool onCooldown = false; // Determines if the Monkey King's slam is on cooldown
 
-        // Gets Monkey King animator
         public override void Awake()
         {
             base.Awake();
-
-            animator = GetComponentInChildren<Animator>();
-
-            if (animator == null)
-            {
-                Debug.LogError("Animator not found on Monkey King!");
-            }
+            animator = GetComponent<Animator>();
         }
 
         public override void Update()
@@ -59,16 +49,14 @@ namespace game
                 !isAttacking &&
                 !onCooldown;
 
-            animator.SetBool("IsWalking", shouldChase && !isAttacking);
-            Debug.Log("IsWalking PARAM = " + animator.GetBool("IsWalking"));
             if (shouldChase)
             {
                 MoveTowardsPlayer();
             }
             else
             {
-                if (!isAttacking && !onCooldown)
-                    BaseAttack();
+                animator.SetBool("IsWalking", false);
+                BaseAttack();
             }
         }
 
@@ -86,21 +74,15 @@ namespace game
         {
             isAttacking = true;
 
+            animator.SetBool("IsWalking", false);
             animator.SetTrigger("SlamTrigger");
 
             // WINDUP
             // Play windup animation if availiable
             Debug.Log("Windup... ");
 
-            // WAIT UNTIL IMPACT MOMENT (not full animation length)
-            yield return new WaitForSeconds(impactTime);
-
-            // ACTUAL DAMAGE MOMENT
-            DoImpactHit();
-            Instantiate(shockwavePrefab, slamPoint.position, Quaternion.identity);
-
-            // WAIT REMAINING ANIMATION TIME
-            yield return new WaitForSeconds(slamAnimationLength - impactTime);
+            // Wait for animation to finish
+            yield return new WaitForSeconds(slamAnimationLength);
 
             // COOLDOWN
             isAttacking = false;
@@ -122,7 +104,7 @@ namespace game
         {
             Collider[] hits = Physics.OverlapSphere(slamPoint.position, impactRadius, playerLayer);
 
-            foreach (Collider hit in hits)
+            foreach(Collider hit in hits)
             {
                 // Try to damage player
                 var health = hit.GetComponent<PlayerHealth>();
@@ -147,6 +129,8 @@ namespace game
         // Makes Monkey King walk towards the player
         private void MoveTowardsPlayer()
         {
+            animator.SetBool("IsWalking", true);
+
             Vector3 direction = (player.position - transform.position);
             direction.y = 0;
 
