@@ -35,9 +35,9 @@ namespace game
         private Health health;
 
         // Determines if the enemy is dead
-        private bool isDead = false;
+        protected bool isDead = false;
 
-        private void Awake()
+        public virtual void Awake()
         {
             health = GetComponent<Health>(); // Sets health to the enemy's health component
         }
