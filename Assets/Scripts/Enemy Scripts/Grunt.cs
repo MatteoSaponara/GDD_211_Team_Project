@@ -21,7 +21,7 @@ namespace game
             base.Update();
             if (Vector3.Distance(transform.position, player.position) >= chaseRange)
             {
-                transform.position += transform.forward * moveSpeed * Time.deltaTime;
+                rb.MovePosition(rb.position + transform.forward * moveSpeed * Time.deltaTime);
             }
             else
             {

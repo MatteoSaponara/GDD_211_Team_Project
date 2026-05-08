@@ -139,7 +139,7 @@ namespace game
             Vector3 direction = (player.position - transform.position);
             direction.y = 0;
 
-            transform.position += direction.normalized * moveSpeed * Time.deltaTime;
+            rb.MovePosition(rb.position + direction.normalized * moveSpeed * Time.deltaTime);
         }
 
         void OnDrawGizmosSelected()

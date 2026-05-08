@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 3805368378180675417}
   - component: {fileID: 351245763761891663}
   - component: {fileID: 3992353868242926986}
+  - component: {fileID: 8573036505267104446}
   m_Layer: 6
   m_Name: Monkey King
   m_TagString: Enemy
@@ -162,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab512d9aefd51b409491607cc6bf713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::game.Health
-  baseHealth: 300
+  baseHealth: 1000
 --- !u!114 &351245763761891663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,7 +203,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 58d4a26f02f839f4ca241594d3d48130, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -211,6 +212,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!54 &8573036505267104446
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3887967030318577831}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1001 &8811852469675596779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -225,15 +253,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7986102246042854413, guid: f17132064f407d74d8ded9a183cc1d08, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.19565713
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7986102246042854413, guid: f17132064f407d74d8ded9a183cc1d08, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7
+      value: -0.98
       objectReference: {fileID: 0}
     - target: {fileID: 7986102246042854413, guid: f17132064f407d74d8ded9a183cc1d08, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.08
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7986102246042854413, guid: f17132064f407d74d8ded9a183cc1d08, type: 3}
       propertyPath: m_LocalRotation.w
