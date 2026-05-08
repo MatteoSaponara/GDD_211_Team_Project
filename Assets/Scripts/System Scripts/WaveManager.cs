@@ -90,13 +90,13 @@ namespace game
 
         private void SpawnEnemies(int count)
         {
-            enemiesAlive = count;
-            UpdateEnemyCount();
+            enemiesAlive += count;
             for (int i = 0; i < count; i++)
             {
                 Transform spawn = spawnPoints[Random.Range(0, spawnPoints.Length)];
                 Instantiate(enemyPrefab, spawn.position, spawn.rotation);
             }
+            UpdateEnemyCount();
         }
 
         private void SpawnBossWave()
@@ -110,7 +110,7 @@ namespace game
             // Spawn backup enemies
             SpawnEnemies(2);
 
-            enemiesAlive = 3;
+            enemiesAlive += 2;
             UpdateEnemyCount();
         }
 
