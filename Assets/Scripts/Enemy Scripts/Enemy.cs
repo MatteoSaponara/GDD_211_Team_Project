@@ -21,8 +21,8 @@ namespace game
         [Tooltip("Length of damage flash.")]
         [SerializeField] private float flashDuration = 0.1f;
 
-        
-         
+        protected Rigidbody rb; // Rigidbody of enemy
+
         // Mesh renderer of GameObject
         private Renderer rend;
 
@@ -40,6 +40,7 @@ namespace game
         public virtual void Awake()
         {
             health = GetComponent<Health>(); // Sets health to the enemy's health component
+            rb = GetComponent<Rigidbody>();
         }
 
         private void Start()
