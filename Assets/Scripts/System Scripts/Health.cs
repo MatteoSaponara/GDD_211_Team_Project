@@ -11,7 +11,7 @@ namespace game
         private float maxHealth; // Maximum health of the object
         protected float currentHealth; // Current health of the object
 
-        private void Start() // Sets currentHealth and maxHealth to baseHealth on Start
+        public virtual void Start() // Sets currentHealth and maxHealth to baseHealth on Start
         {
             maxHealth = baseHealth;
             currentHealth = baseHealth;
