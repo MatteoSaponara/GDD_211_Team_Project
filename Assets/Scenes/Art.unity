@@ -197,6 +197,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 226073358f3fbd9458e47c709908d575, type: 3}
   m_PrefabInstance: {fileID: 379360835}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1130166197 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100082, guid: ef9858f7263e1a64186a273add8d1e11, type: 3}
+  m_PrefabInstance: {fileID: 2097351766}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1408966689
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,7 +774,11 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 3c0a8aed4b08d484c815e2dffbccd29e, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114276512008836108, guid: 2fadabbe61361554c9afaf0d89ed0584, type: 3}
+    - {fileID: 114171915421039910, guid: 2fadabbe61361554c9afaf0d89ed0584, type: 3}
+    - {fileID: 114533150228474522, guid: 2fadabbe61361554c9afaf0d89ed0584, type: 3}
+    - {fileID: 114503308165140684, guid: 2fadabbe61361554c9afaf0d89ed0584, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -786,13 +795,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monkey Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 400020, guid: ef9858f7263e1a64186a273add8d1e11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: ef9858f7263e1a64186a273add8d1e11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400056, guid: ef9858f7263e1a64186a273add8d1e11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -117.772194
+      objectReference: {fileID: 0}
     - target: {fileID: 400082, guid: ef9858f7263e1a64186a273add8d1e11, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.2603216
       objectReference: {fileID: 0}
     - target: {fileID: 400082, guid: ef9858f7263e1a64186a273add8d1e11, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.000000058934035
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 400082, guid: ef9858f7263e1a64186a273add8d1e11, type: 3}
       propertyPath: m_LocalPosition.z
@@ -830,6 +851,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 9f7b675fadcf2d64ca31c089f0dbb67c, type: 2}
+    - target: {fileID: 9500000, guid: ef9858f7263e1a64186a273add8d1e11, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 13700000, guid: ef9858f7263e1a64186a273add8d1e11, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -844,13 +869,38 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 400082, guid: ef9858f7263e1a64186a273add8d1e11, type: 3}
       insertIndex: -1
       addedObject: {fileID: 379360836}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100082, guid: ef9858f7263e1a64186a273add8d1e11, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2097351769}
   m_SourcePrefab: {fileID: 100100000, guid: ef9858f7263e1a64186a273add8d1e11, type: 3}
 --- !u!4 &2097351767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400082, guid: ef9858f7263e1a64186a273add8d1e11, type: 3}
   m_PrefabInstance: {fileID: 2097351766}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &2097351769
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130166197}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
