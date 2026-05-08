@@ -130,7 +130,7 @@ namespace game
 
         public override void Death()
         {
-            SceneManager.LoadScene("Win Screen");
+            SceneManager.LoadScene("WinScreen");
             base.Death();
         }
 
