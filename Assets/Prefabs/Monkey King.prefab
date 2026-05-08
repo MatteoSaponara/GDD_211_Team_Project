@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 1106746734424987661}
   - component: {fileID: 3805368378180675417}
   - component: {fileID: 351245763761891663}
+  - component: {fileID: 8708370492655295230}
   m_Layer: 6
   m_Name: Monkey King
   m_TagString: Enemy
@@ -66,6 +67,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1510965319186492466}
+  - {fileID: 1420797754606208244}
   - {fileID: 5623039811234011480}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -84,7 +86,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3887967030318577831}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -185,8 +187,31 @@ MonoBehaviour:
     m_Bits: 8
   impactRadius: 2
   impactDamage: 15
-  windupTime: 0.5
   coolDownTime: 1
+  slamAnimationLength: 3
+  impactTime: 1.5
+--- !u!95 &8708370492655295230
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3887967030318577831}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: ef9858f7263e1a64186a273add8d1e11, type: 3}
+  m_Controller: {fileID: 9100000, guid: 9f7b675fadcf2d64ca31c089f0dbb67c, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8164073218234240937
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5623039811234011480
 Transform:
   m_ObjectHideFlags: 0
@@ -300,3 +325,67 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &8240687809333497229
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2914863526290930964}
+    m_Modifications:
+    - target: {fileID: 7055871648553588057, guid: 98a63127ed7948149bafd84bcf6e16e7, type: 3}
+      propertyPath: m_Name
+      value: Monkey Boss Final
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055871648553945465, guid: 98a63127ed7948149bafd84bcf6e16e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055871648553945465, guid: 98a63127ed7948149bafd84bcf6e16e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055871648553945465, guid: 98a63127ed7948149bafd84bcf6e16e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055871648553945465, guid: 98a63127ed7948149bafd84bcf6e16e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055871648553945465, guid: 98a63127ed7948149bafd84bcf6e16e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055871648553945465, guid: 98a63127ed7948149bafd84bcf6e16e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055871648553945465, guid: 98a63127ed7948149bafd84bcf6e16e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055871648553945465, guid: 98a63127ed7948149bafd84bcf6e16e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055871648553945465, guid: 98a63127ed7948149bafd84bcf6e16e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055871648553945465, guid: 98a63127ed7948149bafd84bcf6e16e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7055871648546170571, guid: 98a63127ed7948149bafd84bcf6e16e7, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 156238999351141342, guid: 98a63127ed7948149bafd84bcf6e16e7, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 98a63127ed7948149bafd84bcf6e16e7, type: 3}
+--- !u!4 &1420797754606208244 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7055871648553945465, guid: 98a63127ed7948149bafd84bcf6e16e7, type: 3}
+  m_PrefabInstance: {fileID: 8240687809333497229}
+  m_PrefabAsset: {fileID: 0}
