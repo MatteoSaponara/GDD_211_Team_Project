@@ -78,6 +78,7 @@ namespace game
             reloading = false;
             currentAmmo--; // Decreases ammo
             UpdateAmmoUI();
+            GameManager.instance.SoundManager.PlaySound(SoundType.GUNSHOT); // Gunshot sound effect
             Debug.Log("Ammo spent");
 
             for (int i = 0; i < pelletsPerShot /* -1 */; i++) // Uncomment code for consistent middle pellet

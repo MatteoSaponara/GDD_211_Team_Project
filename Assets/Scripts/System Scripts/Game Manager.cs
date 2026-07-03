@@ -55,7 +55,7 @@ namespace game
         }
 
 
-        public void GameOver() 
+        public void GameOver()
         {
             // Game Over Screen
 
@@ -90,12 +90,5 @@ namespace game
             }
         }
     }
-
-    public class SoundManager : MonoBehaviour
-    {
-        public void GunShotSound()
-        {
-
-        }
-    }
 }
+    
