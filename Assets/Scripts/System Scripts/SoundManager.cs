@@ -21,6 +21,7 @@ namespace game
 
         public void PlaySound(SoundType sound, float volume = 1) // Plays sound effect
         {
+            Debug.Log(sound + "sound played");
             audioSource.PlayOneShot(soundList[(int) sound], volume);
         }
     }

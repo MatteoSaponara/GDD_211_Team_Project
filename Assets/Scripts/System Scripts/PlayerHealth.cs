@@ -7,7 +7,7 @@ namespace game
     public class PlayerHealth : Health, IDamagable
     {
         [SerializeField] private UnityEvent death;
-        [Tooltip("Toogle for player invincibility for debuging")]
+        [Tooltip("Toggle for player invincibility for debuging")]
         [SerializeField] private bool debugInvincibility = false;
         [Tooltip("Health UI Text")]
         [SerializeField] private TextMeshProUGUI healthText;

@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::game.GameManager
   player: {fileID: 0}
   isPaused: 0
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 6096705518968245452}
   waveManager: {fileID: 6793996218147066657}
   challengeManager: {fileID: 4367732550386197218}
 --- !u!1 &1240439437327710601
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::game.SoundManager
   soundList:
-  - {fileID: 8300000, guid: 8cde59ed1c8de2b4a9717a743533fe38, type: 3}
+  - {fileID: 8300000, guid: ddffb3b7c95c2cf4f857ebc1160615aa, type: 3}
 --- !u!1 &6113292527152698444
 GameObject:
   m_ObjectHideFlags: 0
