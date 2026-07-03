@@ -17,7 +17,7 @@ namespace game
         [SerializeField] private float requiredStillTime = 3f;
 
         [Tooltip("How much movement counts as moving.")]
-        [SerializeField] private float movementThreshold = 0.05f;
+        [SerializeField] private float movementThreshold = 0f;
 
         // Determines if the challenge is active
         private bool challengeActive;
@@ -40,8 +40,7 @@ namespace game
             challengeTimer -= Time.deltaTime;
 
             // Detect movement
-            float distanceMoved =
-                Vector3.Distance(player.position, lastPosition);
+            float distanceMoved = Vector3.Distance(player.position, lastPosition);
 
             if (distanceMoved <= movementThreshold)
             {

@@ -98,9 +98,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::game.ChallengeManager
   challengeText: {fileID: 5327353786087271446}
-  challengeDuration: 10
-  requiredStillTime: 4
-  movementThreshold: 0.05
+  challengeDuration: 20
+  requiredStillTime: 2
+  movementThreshold: 0
 --- !u!1 &5093676709552680559
 GameObject:
   m_ObjectHideFlags: 0

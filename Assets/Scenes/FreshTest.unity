@@ -131,6 +131,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Original Final Level
       objectReference: {fileID: 0}
+    - target: {fileID: 3010197505292069216, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010197505292069216, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010197505292069216, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3873240890369567306, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9254
@@ -170,6 +182,18 @@ PrefabInstance:
     - target: {fileID: 3873240890369567306, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661888634174955150, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: challengeDuration
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661888634174955150, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: movementThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661888634174955150, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: requiredStillTime
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6080625288253447810, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
       propertyPath: m_LocalPosition.x
