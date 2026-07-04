@@ -7,6 +7,7 @@ namespace game
     [RequireComponent(typeof(Health))]
     public abstract class Enemy : MonoBehaviour, IDamagable
     {
+        // Death Rattle For Enemy CHECK IF NECESSARY
         public static event Action<Enemy> OnEnemyKilled;
 
         [Header("Stats")]
@@ -21,7 +22,8 @@ namespace game
         [Tooltip("Length of damage flash.")]
         [SerializeField] private float flashDuration = 0.1f;
 
-        protected Rigidbody rb; // Rigidbody of enemy
+        // Rigidbody of enemy
+        protected Rigidbody rb; 
 
         // Mesh renderer of GameObject
         private Renderer rend;
@@ -29,6 +31,7 @@ namespace game
         // Original color of GameObject
         private Color originalColor;
 
+        // Position of the player
         protected Transform player;
 
         // Health of enemy

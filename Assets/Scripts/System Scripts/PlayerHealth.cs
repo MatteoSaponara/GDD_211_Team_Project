@@ -6,6 +6,7 @@ namespace game
 {
     public class PlayerHealth : Health, IDamagable
     {
+        [Tooltip("Unity Event for when the player reaches 0 health")]
         [SerializeField] private UnityEvent death;
         [Tooltip("Toggle for player invincibility for debuging")]
         [SerializeField] private bool debugInvincibility = false;
