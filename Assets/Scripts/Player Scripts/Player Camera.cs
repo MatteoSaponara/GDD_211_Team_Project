@@ -5,12 +5,16 @@ namespace game
 {
     public class PlayerCamera : MonoBehaviour
     {
+        [Tooltip("Position of the player")]
         [SerializeField] private Transform playerBody;
+        [Tooltip("Sensitivity of player input")]
         [SerializeField] private float sensitivity = 100f;
 
+        // Vertical rotation of the camera
         private float xRotation = 0f;
         private Vector2 lookInput;
 
+        // Gets camera vector from player input
         public void OnLook(InputAction.CallbackContext context)
         {
             if (context.performed)
@@ -24,13 +28,14 @@ namespace game
             }
         }
 
+        // Locks cursor and turns off visibility
         void Start()
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
 
-        // Update is called once per frame
+        // Takes player input and moves the camera
         void Update()
         {
             float mouseX = lookInput.x * sensitivity * Time.deltaTime;

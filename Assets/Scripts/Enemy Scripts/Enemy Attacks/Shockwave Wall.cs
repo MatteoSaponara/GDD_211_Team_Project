@@ -4,8 +4,10 @@ namespace game
 {
     public class ShockwaveWall : MonoBehaviour
     {
+        [Tooltip("Shockwave script of the parent Shockwave.")]
         [SerializeField] private Shockwave shockwave;
 
+        // Increases size of shockwave visual
         void Update()
         {
             if (shockwave == null)
