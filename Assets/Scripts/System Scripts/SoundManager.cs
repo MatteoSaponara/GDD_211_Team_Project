@@ -2,8 +2,8 @@ using UnityEngine; // Asked AI how to properly auto assign the player to Game Ma
 
 namespace game
 {
-
-    public enum SoundType // Contains memebers that will reference audio clips
+    // Contains members that will reference audio clips
+    public enum SoundType 
     {
         GUNSHOT
     }
@@ -11,15 +11,20 @@ namespace game
     [RequireComponent(typeof(AudioSource))]
     public class SoundManager : MonoBehaviour
     {
-        [SerializeField] private AudioClip[] soundList; // List of AudioClips
-        private AudioSource audioSource; // Reference to AudioSource
+        [Tooltip("List of sound effects.")]
+        [SerializeField] private AudioClip[] soundList;
 
-        private void Start() // Sets audioSource
+        // Reference to AudioSource
+        private AudioSource audioSource;
+
+        // Sets audioSource
+        private void Start() 
         {
             audioSource = GetComponent<AudioSource>();
         }
 
-        public void PlaySound(SoundType sound, float volume = 1) // Plays sound effect
+        // Plays sound effect
+        public void PlaySound(SoundType sound, float volume = 1) 
         {
             Debug.Log(sound + "sound played");
             audioSource.PlayOneShot(soundList[(int) sound], volume);

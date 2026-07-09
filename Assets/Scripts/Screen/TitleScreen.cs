@@ -3,8 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class TitleScreenUI : MonoBehaviour
 {
+    // Switches to next scene
     public void StartGame()
     {
-        SceneManager.LoadScene("Final"); 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
     }
 }

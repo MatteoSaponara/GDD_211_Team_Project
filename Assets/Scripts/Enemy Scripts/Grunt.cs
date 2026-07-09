@@ -16,11 +16,13 @@ namespace game
 
         private float fireTimer;
 
+        // Moves grunt towards player and attacks them in range
         public override void Update()
         {
             base.Update();
             if (Vector3.Distance(transform.position, player.position) >= chaseRange)
             {
+                // INSERT: Walking sound effect
                 rb.MovePosition(rb.position + transform.forward * moveSpeed * Time.deltaTime);
             }
             else
@@ -31,7 +33,8 @@ namespace game
                 if (fireTimer <= 0f)
                 {
                     BaseAttack();
-                    fireTimer = (1f / fireRate) - 0.5f + Random.value; // Resets timer with a bit of randomness
+                    // Resets timer with a bit of randomness
+                    fireTimer = (1f / fireRate) - 0.5f + Random.value; 
                 }
             }
         }
@@ -39,6 +42,8 @@ namespace game
         // Fires projectiles at the player
         public override void BaseAttack()
         {
+            //INSERT: Grunt firing sound effect
+
             // Direction from fire point to player
             Vector3 direction = (player.position - firePoint.position).normalized;
 

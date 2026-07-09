@@ -6,19 +6,21 @@ namespace game
 {
     public class PlayerHealth : Health, IDamagable
     {
-        [Tooltip("Unity Event for when the player reaches 0 health")]
+        [Tooltip("Unity Event for when the player reaches 0 health.")]
         [SerializeField] private UnityEvent death;
-        [Tooltip("Toggle for player invincibility for debuging")]
-        [SerializeField] private bool debugInvincibility = false;
-        [Tooltip("Health UI Text")]
+        [Tooltip("Health UI text.")]
         [SerializeField] private TextMeshProUGUI healthText;
+        [Tooltip("Toggle for player invincibility for debuging.")]
+        [SerializeField] private bool debugInvincibility = false;
 
+        // Updates UI to starting health
         public override void Start()
         {
             base.Start();
             UpdateHealthUI();
         }
 
+        // Applies damage to the player
         public override void TakeDamage(float damage)
         {
             if (debugInvincibility)
@@ -35,10 +37,13 @@ namespace game
             }
         }
 
+        // Invokes death Unity Event
         public void Death()
         {
             death.Invoke();
         }
+
+        // Updates the player health UI
         private void UpdateHealthUI()
         {
             healthText.text = currentHealth + " HP";

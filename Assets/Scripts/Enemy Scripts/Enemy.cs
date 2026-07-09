@@ -7,7 +7,8 @@ namespace game
     [RequireComponent(typeof(Health))]
     public abstract class Enemy : MonoBehaviour, IDamagable
     {
-        // Death Rattle For Enemy CHECK IF NECESSARY
+        // Death Rattle For Enemy
+        // NOTE: Check if necessary
         public static event Action<Enemy> OnEnemyKilled;
 
         [Header("Stats")]
@@ -40,23 +41,24 @@ namespace game
         // Determines if the enemy is dead
         protected bool isDead = false;
 
+        // Sets enemy's health and rigidbody components
         public virtual void Awake()
         {
-            health = GetComponent<Health>(); // Sets health to the enemy's health component
+            health = GetComponent<Health>(); 
             rb = GetComponent<Rigidbody>();
         }
 
         private void Start()
         {
             Debug.Log("Enemy start");
-            // Get player reference
+            // Gets player reference
             player = GameManager.instance.player.transform;
             if (player != null)
             {
                 Debug.Log("Player found by enemy");
             }
 
-            // Get mesh renderer reference
+            // Gets mesh renderer reference
             rend = GetComponent<MeshRenderer>();
             if (rend == null)
             {
@@ -79,7 +81,8 @@ namespace game
                 return;
             }
 
-            // Makes enemy always face the player. Might want to remove and only put into subclasses depending on enemy
+            // Makes enemy always face the player
+            // NOTE: Might want to remove and only put into subclasses depending on enemy
             //Debug.Log("Rotating toward: " + player.position);
             Vector3 lookPos = player.position - transform.position;
             lookPos.y = 0; // prevents tilting
@@ -113,11 +116,13 @@ namespace game
 
             isDead = true;
 
+            // INSERT: Death sound effect 
             OnEnemyKilled?.Invoke(this);
             Destroy(gameObject);
         }
 
         // Makes the GameObject flash a color
+        // NOTE: Need to fix as it does not work with the new monkey model
         private IEnumerator DoFlash()
         {
             rend.material.color = flashColor;
