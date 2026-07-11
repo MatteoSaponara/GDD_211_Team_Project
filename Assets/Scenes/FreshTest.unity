@@ -204,8 +204,66 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+--- !u!1001 &6615808903300864789
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.068296
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 18.62286
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.43388784
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9009669
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 128.571
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 301584098}
+  - {fileID: 6615808903300864789}
