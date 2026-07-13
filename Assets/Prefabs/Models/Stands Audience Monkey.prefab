@@ -473,14 +473,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5096207599381872489}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000016963657, y: 0.0000001787605, z: 0.9429776, w: -0.33285624}
-  m_LocalPosition: {x: -0.24692029, y: 0.35301197, z: 0}
+  m_LocalRotation: {x: 0.00000008940697, y: 0.00000014901161, z: 0.56386405, w: -0.82586765}
+  m_LocalPosition: {x: -0.24691974, y: 0.353012, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3905431474430496755}
   m_Father: {fileID: 1398077570744762957}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -68.647}
 --- !u!1 &5121334284480485268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1064,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8916636908708068247}
   - component: {fileID: 7585633449873561623}
+  - component: {fileID: 5110817350518057171}
   m_Layer: 0
   m_Name: Stands Audience Monkey
   m_TagString: Untagged
@@ -1081,8 +1082,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6504907, y: 0.6504907, z: 0.6504907}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.625, y: 0.625, z: 0.625}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4155608633201991498}
   - {fileID: 5198178370762674565}
@@ -1110,6 +1111,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5110817350518057171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923758945649832973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd5491783ed544439e32f5ab7507cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::game.AnimationRandomFrameStart
 --- !u!1 &9087224289447773672
 GameObject:
   m_ObjectHideFlags: 0

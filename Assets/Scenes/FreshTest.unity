@@ -119,6 +119,146 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &85944694
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.554
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 18.779
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.6437608
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7652269
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 260.146
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &85944695 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 85944694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &128396650
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.33000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 29.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.3178349
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9481461
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 217.064
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &128396651 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 128396650}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &301584098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -199,34 +339,73 @@ PrefabInstance:
       propertyPath: debugInvincibility
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8568142258583268767, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6446363321008617715, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 6239581333023455153, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 6446247626078374273, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 4306946962565846129, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 3682471139726248642, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 4076382063673020644, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 7335602391498533900, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 4632965009059582854, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 6297966686394268157, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 8312273194550662801, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 1603946286156932231, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 3711941226983818985, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 610385510353404871, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 2377877606835227166, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 4707625559856087453, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 5861967864185621059, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 3382723702040875057, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 7220857679118624410, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 2235690164235714072, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3873240890369567306, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      insertIndex: 7
+      addedObject: {fileID: 1694514417}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
---- !u!1001 &6615808903300864789
+--- !u!4 &301584099 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3873240890369567306, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+  m_PrefabInstance: {fileID: 301584098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &332019780
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1694514417}
     m_Modifications:
     - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.068296
+      value: -19.683126
       objectReference: {fileID: 0}
     - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.54
+      value: 0.36
       objectReference: {fileID: 0}
     - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.62286
+      value: 11.503062
       objectReference: {fileID: 0}
     - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.43388784
+      value: -0.7226728
       objectReference: {fileID: 0}
     - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
       propertyPath: m_LocalRotation.x
@@ -234,7 +413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9009669
+      value: -0.6911903
       objectReference: {fileID: 0}
     - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
       propertyPath: m_LocalRotation.z
@@ -246,7 +425,1177 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 128.571
+      value: 447.449
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &332019781 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 332019780}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &369297380
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.106579
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 32.09838
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.3358122
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.941929
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 140.756
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &369297381 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 369297380}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &397567574
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.89463043
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.44680703
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 306.922
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &397567575 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 397567574}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &464565155
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 35.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.28137657
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9595974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 147.315
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!1001 &466701570
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7226728
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6911903
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 447.449
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &466701571 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 466701570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &646060981 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 724260173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &694887037 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 464565155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &724260173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 33.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.28137657
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9595974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 147.315
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!1001 &885996061
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.92135215
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.38872907
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 314.249
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &885996062 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 885996061}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &890917616
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.9846869
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.17433238
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 339.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &890917617 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 890917616}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &956762724
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.188725
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.944268
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.8230621
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5679513
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 429.215
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &956762725 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 956762724}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &959238555
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.083
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.919
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.83398604
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.55178547
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 293.021
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &959238556 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 959238555}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1213051930
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.751
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.41342625
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9105376
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 228.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &1213051931 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 1213051930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1279916947
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.61019
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.33000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.992268
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.41342625
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9105376
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 228.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &1279916948 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 1279916947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1660234250
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.83398604
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.55178547
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 293.021
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &1660234251 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 1660234250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1694514416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1694514417}
+  m_Layer: 0
+  m_Name: Audience Monkeys
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1694514417
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694514416}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6615808903300864790}
+  - {fileID: 369297381}
+  - {fileID: 694887037}
+  - {fileID: 646060981}
+  - {fileID: 2039324722}
+  - {fileID: 128396651}
+  - {fileID: 1279916948}
+  - {fileID: 1213051931}
+  - {fileID: 85944695}
+  - {fileID: 1660234251}
+  - {fileID: 397567575}
+  - {fileID: 885996062}
+  - {fileID: 890917617}
+  - {fileID: 2010139735}
+  - {fileID: 1727575255}
+  - {fileID: 956762725}
+  - {fileID: 332019781}
+  - {fileID: 466701571}
+  - {fileID: 959238556}
+  m_Father: {fileID: 301584099}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1727575254
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.91314286
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4076396
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 408.113
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &1727575255 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 1727575254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2010139734
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.91314286
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4076396
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 408.113
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &2010139735 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 2010139734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2039324721
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.28137657
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9595974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 147.315
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923758945649832973, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_Name
+      value: Stands Audience Monkey (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &2039324722 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 2039324721}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6615808903300864789
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694514417}
+    m_Modifications:
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65049076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.353
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5670285
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8236982
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 110.913
       objectReference: {fileID: 0}
     - target: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -261,9 +1610,13 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+--- !u!4 &6615808903300864790 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
+  m_PrefabInstance: {fileID: 6615808903300864789}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 301584098}
-  - {fileID: 6615808903300864789}
