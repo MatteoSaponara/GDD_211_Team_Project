@@ -4,13 +4,14 @@ namespace game
 {
     public class Projectile : MonoBehaviour
     {
-        [Tooltip("The speed of the projectile")]
+        [Tooltip("The speed of the projectile.")]
         [SerializeField] private float speed = 10f;
-        [Tooltip("How long the projectile travels for")]
+        [Tooltip("How long the projectile travels for.")]
         [SerializeField] private float lifetime = 3f;
-        [Tooltip("Damage the projectile does")]
+        [Tooltip("Damage the projectile does.")]
         [SerializeField] protected float damage = 5f;
 
+        // Rigidbody of the projectile
         private Rigidbody rb;
 
         private void Awake()
@@ -37,6 +38,10 @@ namespace game
             {
                 Debug.Log("The player has been hit!");
                 collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
+            }
+            else
+            {
+                //Debug.Log("A projectile has hit " + collision.collider.gameObject.name);
             }
 
             Destroy(gameObject);
