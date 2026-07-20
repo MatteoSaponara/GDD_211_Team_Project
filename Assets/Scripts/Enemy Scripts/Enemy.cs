@@ -8,6 +8,9 @@ namespace game
     public abstract class Enemy : MonoBehaviour, IDamagable
     {
         public static event Action<Enemy> OnEnemyKilled;
+        [Header("References")]
+        [Tooltip("Animator of the enemy.")]
+        [SerializeField] protected Animator animator;
 
         [Header("Stats")]
         [Tooltip("The speed of the enemy.")]

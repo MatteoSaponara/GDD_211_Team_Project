@@ -14,17 +14,24 @@ namespace game
         [Tooltip("Firerate of enemy projectiles.")]
         [SerializeField] private float fireRate = 1f;
 
+        // Determines if the grunt is walking
+        private bool isWalking;
+
+        // Cooldown between shots
         private float fireTimer;
 
+        // Determines if the grunt should be walking towards or shooting at the player
         public override void Update()
         {
             base.Update();
             if (Vector3.Distance(transform.position, player.position) >= chaseRange)
             {
+                isWalking = true;
                 rb.MovePosition(rb.position + transform.forward * moveSpeed * Time.deltaTime);
             }
             else
             {
+                isWalking = false;
                 // Timing between firing
                 fireTimer -= Time.deltaTime;
 
@@ -34,6 +41,8 @@ namespace game
                     fireTimer = (1f / fireRate) - 0.5f + Random.value; // Resets timer with a bit of randomness
                 }
             }
+            animator.SetBool("IsWalking", isWalking);
+            Debug.Log("This grunt is waling is a " + animator.GetBool("IsWalking") + " statement");
         }
 
         // Fires projectiles at the player
