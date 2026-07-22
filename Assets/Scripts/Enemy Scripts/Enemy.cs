@@ -112,8 +112,15 @@ namespace game
             }
 
             isDead = true;
-
+            animator.SetBool("Die", isDead);
             OnEnemyKilled?.Invoke(this);
+            // Stops movement
+            rb.linearVelocity = Vector3.zero;
+        }
+
+        // Destroys self
+        public void DestroyEnemy()
+        {
             Destroy(gameObject);
         }
 

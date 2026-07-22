@@ -37,7 +37,7 @@ namespace game
 
                 if (fireTimer <= 0f)
                 {
-                    BaseAttack();
+                    animator.SetTrigger("Shoot");
                     fireTimer = (1f / fireRate) - 0.5f + Random.value; // Resets timer with a bit of randomness
                 }
             }
@@ -54,6 +54,12 @@ namespace game
             GameObject proj = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
 
             proj.GetComponent<Projectile>().Launch(direction);
+        }
+
+        public override void Death()
+        {
+            
+            base.Death();
         }
     }
 }

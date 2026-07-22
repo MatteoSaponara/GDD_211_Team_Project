@@ -43,8 +43,11 @@ namespace game
             {
                 //Debug.Log("A projectile has hit " + collision.collider.gameObject.name);
             }
-
-            Destroy(gameObject);
+            if (!collision.gameObject.CompareTag("Enemy"))
+            {
+                Destroy(gameObject);
+            }
+            
         }
     }
 }
