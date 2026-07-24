@@ -60837,7 +60837,7 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 2
-    functionName: 
+    functionName: DestroyEnemy
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
