@@ -3,6 +3,7 @@ using TMPro;
 
 namespace game
 {
+    // NOTE: Make it compatible with different challenges
     public class ChallengeManager : MonoBehaviour // Assisted with AI
     {
         [Header("Challenge UI")]
@@ -12,10 +13,8 @@ namespace game
         [Header("Challenge Settings")]
         [Tooltip("Total time player has to complete challenge.")]
         [SerializeField] private float challengeDuration = 10f;
-
         [Tooltip("How long the player must stand still.")]
         [SerializeField] private float requiredStillTime = 3f;
-
         [Tooltip("How much movement counts as moving.")]
         [SerializeField] private float movementThreshold = 0f;
 
@@ -27,9 +26,12 @@ namespace game
         // Time left for the player to complete the challenge
         private float challengeTimer;
 
+        // Last position of the player
         private Vector3 lastPosition;
+        // Reference to the player
         private Transform player;
 
+        // Handles the challenge and checks if the player completes it
         private void Update()
         {
             if (!challengeActive || player == null)
@@ -40,6 +42,7 @@ namespace game
             challengeTimer -= Time.deltaTime;
 
             // Detect movement
+            // NOTE: Possibly make it its own funct ion
             float distanceMoved = Vector3.Distance(player.position, lastPosition);
 
             if (distanceMoved <= movementThreshold)
@@ -72,6 +75,7 @@ namespace game
             }
         }
 
+        // Starts the challenge
         public void StartChallenge()
         {
             if (challengeActive)
@@ -92,6 +96,7 @@ namespace game
                 $"- STAND STILL FOR {requiredStillTime} SECONDS!";
         }
 
+        // Communicates that the challenge has been complete
         private void ChallengeSuccess()
         {
             challengeActive = false;
@@ -101,6 +106,7 @@ namespace game
             Debug.Log("Challenge completed!");
         }
 
+        // Communicaters that the challenge has been failed and provides punishment
         private void ChallengeFailed()
         {
             challengeActive = false;

@@ -11,12 +11,17 @@ namespace game
         [Tooltip("Damage the projectile does.")]
         [SerializeField] protected float damage = 5f;
 
+<<<<<<< HEAD
         // Rigidbody of the projectile
+=======
+        // Rigidbody of projectile
+>>>>>>> main
         private Rigidbody rb;
 
+        // Assigns rigidbody
         private void Awake()
         {
-            // Assigns rigidbody
+            
             rb = GetComponent<Rigidbody>();
         }
 
@@ -32,6 +37,7 @@ namespace game
             Destroy(gameObject, lifetime);
         }
 
+        // When the projectiles collides with the player, they take damage and the projectile is destroyed
         private void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.CompareTag("Player"))

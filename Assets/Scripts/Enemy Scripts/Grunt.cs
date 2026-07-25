@@ -20,13 +20,21 @@ namespace game
         // Cooldown between shots
         private float fireTimer;
 
+<<<<<<< HEAD
         // Determines if the grunt should be walking towards or shooting at the player
+=======
+        // Moves grunt towards player and attacks them in range
+>>>>>>> main
         public override void Update()
         {
             base.Update();
             if (Vector3.Distance(transform.position, player.position) >= chaseRange)
             {
+<<<<<<< HEAD
                 isWalking = true;
+=======
+                // INSERT: Walking sound effect
+>>>>>>> main
                 rb.MovePosition(rb.position + transform.forward * moveSpeed * Time.deltaTime);
             }
             else
@@ -37,8 +45,14 @@ namespace game
 
                 if (fireTimer <= 0f)
                 {
+<<<<<<< HEAD
                     animator.SetTrigger("Shoot");
                     fireTimer = (1f / fireRate) - 0.5f + Random.value; // Resets timer with a bit of randomness
+=======
+                    BaseAttack();
+                    // Resets timer with a bit of randomness
+                    fireTimer = (1f / fireRate) - 0.5f + Random.value; 
+>>>>>>> main
                 }
             }
             animator.SetBool("IsWalking", isWalking);
@@ -48,6 +62,8 @@ namespace game
         // Fires projectiles at the player
         public override void BaseAttack()
         {
+            //INSERT: Grunt firing sound effect
+
             // Direction from fire point to player
             Vector3 direction = (player.position - firePoint.position).normalized;
 

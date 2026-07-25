@@ -19,7 +19,7 @@ namespace game
         [Tooltip("How much damage the shockwave does.")]
         [SerializeField] private int damage = 15;
 
-        [Tooltip("The layer that the player will hit")]
+        [Tooltip("The layer that the shockwave will hit.")]
         [SerializeField] private LayerMask hitLayers;
 
         // Tracks radius of the shockwave
@@ -40,26 +40,27 @@ namespace game
             CheckHits();
         }
 
+        // Expands the shockwave
         void ExpandRing()
         {
             // Store previous radius before expanding
             previousRadius = currentRadius;
 
+            // Increases the radius of the shockwave
             currentRadius += expansionSpeed * Time.deltaTime;
 
+            // Destroys the shockwave once it reaches the maximum radius
             if (currentRadius >= maxRadius)
             {
                 Destroy(gameObject);
             }
         }
 
+        // Hit logic
         void CheckHits()
         {
-            Collider[] hits = Physics.OverlapSphere(
-                transform.position,
-                currentRadius,
-                hitLayers
-            );
+            // Track everything the shockwave hits
+            Collider[] hits = Physics.OverlapSphere(transform.position, currentRadius, hitLayers);
 
             foreach (Collider hit in hits)
             {
@@ -75,12 +76,13 @@ namespace game
                 if (dist < previousRadius || dist > currentRadius)
                     continue;
 
-                // Gets health from parent object
+                // Gets health from parent object if it the player
                 var health = hit.GetComponentInParent<PlayerHealth>();
 
                 if (health == null)
                     continue;
 
+                // Checks if the player is grounded
                 var controller = hit.GetComponentInParent<CharacterController>();
 
                 if (controller != null && !controller.isGrounded)
@@ -94,6 +96,7 @@ namespace game
 
                 Debug.Log("Shockwave dealt damage to the player: " + damage);
 
+                // Makes the player take damage
                 health.TakeDamage(damage);
             }
         }
