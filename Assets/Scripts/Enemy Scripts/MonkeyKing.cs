@@ -7,7 +7,7 @@ namespace game
     public class MonkeyKing : Enemy // Asked ChatGPT with help setting up the slam attack
     {
         [Header("References")]
-        [Tooltip("Prefab of the slam's shockwave.")]
+        [Tooltip("Prefab of the slam shockwave.")]
         [SerializeField] private GameObject shockwavePrefab;
         [Tooltip("Point of the slam attack.")]
         [SerializeField] private Transform slamPoint;
@@ -23,19 +23,15 @@ namespace game
         [SerializeField] private float coolDownTime = 0.3f;
         [Tooltip("Length of the slam animation.")]
         [SerializeField] private float slamAnimationLength = 3f;
+
         [Tooltip("When the impact happens during the slam animation.")]
         [SerializeField] private float impactTime = 1.5f;
 
-        // Animator of the Monkey King
-        private Animator animator;
+        private Animator animator; // Animator of the Monkey King
 
-        // Determines if the Monkey King is attacking
-        private bool isAttacking = false;
-        // Determines if the Monkey King's slam is on cooldown
-        private bool onCooldown = false; 
+        private bool isAttacking = false; // Determines if the Monkey King is attacking
+        private bool onCooldown = false; // Determines if the Monkey King's slam is on cooldown
 
-        // Gets Animator
-        // NOTE: Check up on this when working on the Monkey King's Animator
         public override void Awake()
         {
             base.Awake();
@@ -47,7 +43,7 @@ namespace game
                 Debug.LogError("Animator not found on Monkey King!");
             }
         }
-        // Determines whether the Monkey King should chase the player or do an attack
+
         public override void Update()
         {
             base.Update();
@@ -76,7 +72,6 @@ namespace game
             }
         }
 
-        // Initiates slam attack
         public override void BaseAttack()
         {
             if (!isAttacking && !onCooldown)
@@ -85,7 +80,6 @@ namespace game
             }
         }
 
-        // Slam attack process
         private IEnumerator SlamAttack()
         {
             isAttacking = true;
@@ -96,7 +90,8 @@ namespace game
 
             yield return new WaitForSeconds(impactTime);
 
-            Impact();
+            DoImpactHit();
+            Instantiate(shockwavePrefab, slamPoint.position, Quaternion.identity);
 
             yield return new WaitForSeconds(slamAnimationLength - impactTime);
 
@@ -108,15 +103,12 @@ namespace game
             onCooldown = false;
         }
 
-        // Creates impact hit and a shockwave
         public void Impact()
         {
-            // INSERT: Impact sound effect
             DoImpactHit();
             Instantiate(shockwavePrefab, slamPoint.position, Quaternion.identity);
         }
 
-        // Impact hit
         private void DoImpactHit()
         {
             Collider[] hits = Physics.OverlapSphere(slamPoint.position, impactRadius, playerLayer);
@@ -136,15 +128,12 @@ namespace game
             }
         }
 
-        // As of now: initiates win state when the Monkey King dies
         public override void Death()
         {
-            // INSERT: Death sound effect (maybe)
             SceneManager.LoadScene("WinScreen");
             base.Death();
         }
 
-        // Makes the Monkey King moves towards the player
         private void MoveTowardsPlayer()
         {
             Vector3 direction = (player.position - transform.position);
@@ -153,7 +142,6 @@ namespace game
             rb.MovePosition(rb.position + direction.normalized * moveSpeed * Time.deltaTime);
         }
 
-        // Gizmos for visualizing the impact hitbox
         void OnDrawGizmosSelected()
         {
             if (slamPoint == null) return;

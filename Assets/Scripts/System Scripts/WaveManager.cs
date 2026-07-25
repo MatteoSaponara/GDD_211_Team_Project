@@ -5,7 +5,6 @@ using TMPro;
 
 namespace game
 {
-    // NOTE: Might want to make an interface or subclasses for other waves/levels
     public class WaveManager : MonoBehaviour // Assited with AI
     {
         [Header("Initial Setup")]
@@ -32,11 +31,8 @@ namespace game
         [Tooltip("Text that displays the number of enemies left.")]
         [SerializeField] private TextMeshProUGUI enemyText;
 
-        // Number of enemies alive
         private int enemiesAlive;
-        // Index of the wave
         private int waveIndex = 0;
-        // Tracks of if the boss has spawned
         private bool bossSpawned = false;
 
         private void OnEnable()
@@ -49,7 +45,6 @@ namespace game
             Enemy.OnEnemyKilled -= HandleEnemyKilled;
         }
 
-        // Sets enemy count with initial number of enemies
         private void Start()
         {
             enemiesAlive = Object.FindObjectsByType<Enemy>(FindObjectsSortMode.None).Length;
@@ -83,8 +78,7 @@ namespace game
                 {
                     SpawnBossWave();
                     SpawnEnemies(3);
-                    // Deactivates boss model
-                    bossModel.gameObject.SetActive(false); 
+                    bossModel.gameObject.SetActive(false); // Deactivates boss model
                     yield break;
                 }
                 else
@@ -94,8 +88,6 @@ namespace game
             }
         }
 
-        // Spawns count amount of enemies
-        // NOTE: Will likely want to make overloads with different parameters, including one with no count and one with a prefab parameter
         private void SpawnEnemies(int count)
         {
             enemiesAlive += count;
@@ -107,7 +99,6 @@ namespace game
             UpdateEnemyCount();
         }
 
-        // Spawns the boss wave
         private void SpawnBossWave()
         {
             bossSpawned = true;
@@ -122,8 +113,7 @@ namespace game
             enemiesAlive += 2;
             UpdateEnemyCount();
         }
-        
-        // Updates enemy UI
+
         private void UpdateEnemyCount()
         {
             enemyText.text = "Enemies Left: " + enemiesAlive;

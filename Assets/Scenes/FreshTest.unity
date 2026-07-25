@@ -335,10 +335,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 34.09
       objectReference: {fileID: 0}
-    - target: {fileID: 6825769275536899168, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
-      propertyPath: damage
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7486484892416619457, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
       propertyPath: debugInvincibility
       value: 0

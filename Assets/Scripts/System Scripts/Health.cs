@@ -5,35 +5,29 @@ namespace game
 {
     public class Health : MonoBehaviour
     {
-        [Tooltip("Health the object starts with and its maximum health.")]
+        [Tooltip("The health the object starts with and its maximum health")]
         [SerializeField] private float baseHealth;
 
-        // Maximum health of the object
-        private float maxHealth;
-        // Current health of the object
-        protected float currentHealth;
+        private float maxHealth; // Maximum health of the object
+        protected float currentHealth; // Current health of the object
 
-        // Sets currentHealth and maxHealth to baseHealth on Start
-        public virtual void Start() 
+        public virtual void Start() // Sets currentHealth and maxHealth to baseHealth on Start
         {
             maxHealth = baseHealth;
             currentHealth = baseHealth;
         }
 
-        // Returns currentHealth
-        public float GetHealth() 
+        public float GetHealth() // Returns currentHealth
         {
             return currentHealth;
         }
 
-        // Sets currentHealth
-        public void SetHealth(float h) 
+        public void SetHealth(float h) // Sets currentHealth
         {
             currentHealth = h;
         }
 
-        // Increases currentHealth by h and makes sure that health does not increase past maxHealth
-        public void Heal(float h) 
+        public void Heal(float h) // Increases currentHealth by h and makes sure that health does not increase past maxHealth
         {
             currentHealth += h;
             if (currentHealth > maxHealth)
@@ -42,13 +36,11 @@ namespace game
             }
         }
 
-        // Lowers currentHealth by damage
-        public virtual void TakeDamage(float damage) 
+        public virtual void TakeDamage(float damage) // Lowers currentHealth by damage
         {
             currentHealth -= damage;
         }
 
-        // Checks if the health is 0
         public bool CheckIfDead()
         {
             return currentHealth <= 0;
