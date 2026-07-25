@@ -7,9 +7,10 @@ namespace game
     [RequireComponent(typeof(Health))]
     public abstract class Enemy : MonoBehaviour, IDamagable
     {
-        // Death Rattle For Enemy
-        // NOTE: Check if necessary
         public static event Action<Enemy> OnEnemyKilled;
+        [Header("References")]
+        [Tooltip("Animator of the enemy.")]
+        [SerializeField] protected Animator animator;
 
         [Header("Stats")]
         [Tooltip("The speed of the enemy.")]
@@ -23,8 +24,7 @@ namespace game
         [Tooltip("Length of damage flash.")]
         [SerializeField] private float flashDuration = 0.1f;
 
-        // Rigidbody of enemy
-        protected Rigidbody rb; 
+        protected Rigidbody rb; // Rigidbody of enemy
 
         // Mesh renderer of GameObject
         private Renderer rend;
@@ -32,7 +32,6 @@ namespace game
         // Original color of GameObject
         private Color originalColor;
 
-        // Position of the player
         protected Transform player;
 
         // Health of enemy
@@ -41,24 +40,23 @@ namespace game
         // Determines if the enemy is dead
         protected bool isDead = false;
 
-        // Sets enemy's health and rigidbody components
         public virtual void Awake()
         {
-            health = GetComponent<Health>(); 
+            health = GetComponent<Health>(); // Sets health to the enemy's health component
             rb = GetComponent<Rigidbody>();
         }
 
         private void Start()
         {
             Debug.Log("Enemy start");
-            // Gets player reference
+            // Get player reference
             player = GameManager.instance.player.transform;
             if (player != null)
             {
                 Debug.Log("Player found by enemy");
             }
 
-            // Gets mesh renderer reference
+            // Get mesh renderer reference
             rend = GetComponent<MeshRenderer>();
             if (rend == null)
             {
@@ -81,8 +79,7 @@ namespace game
                 return;
             }
 
-            // Makes enemy always face the player
-            // NOTE: Might want to remove and only put into subclasses depending on enemy
+            // Makes enemy always face the player. Might want to remove and only put into subclasses depending on enemy
             //Debug.Log("Rotating toward: " + player.position);
             Vector3 lookPos = player.position - transform.position;
             lookPos.y = 0; // prevents tilting
@@ -115,14 +112,19 @@ namespace game
             }
 
             isDead = true;
-
-            // INSERT: Death sound effect 
+            animator.SetBool("Die", isDead);
             OnEnemyKilled?.Invoke(this);
+            // Stops movement
+            rb.linearVelocity = Vector3.zero;
+        }
+
+        // Destroys self
+        public void DestroyEnemy()
+        {
             Destroy(gameObject);
         }
 
         // Makes the GameObject flash a color
-        // NOTE: Need to fix as it does not work with the new monkey model
         private IEnumerator DoFlash()
         {
             rend.material.color = flashColor;

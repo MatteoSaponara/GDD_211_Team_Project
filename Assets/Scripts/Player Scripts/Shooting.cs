@@ -12,29 +12,29 @@ namespace game
     public class Shooting : MonoBehaviour // Asked google search result AI how to make coroutine for reloading and firerate. Asked ChatGPT for proper trail destruction
     {
         [Header("References")]
-        [Tooltip("Bullet trail visualizer.")]
+        [Tooltip("Bullet trail visualizer")]
         [SerializeField] private GameObject lr;
-        [Tooltip("Position of muzzle where bullets visuals are fired from.")]
+        [Tooltip("Position of muzzle where bullets visuals are fired from")]
         [SerializeField] private Transform muzzle;
-        [Tooltip("Camera position where raycasts come from.")]
+        [Tooltip("Camera position where raycasts come from")]
         [SerializeField] private Transform camTrans;
-        [Tooltip("Ammo UI Text.")]
+        [Tooltip("Ammo UI Text")]
         [SerializeField] private TextMeshProUGUI ammoText;
 
         [Header("Shooting Mechanics")]
-        [Tooltip("Damage each bullet does.")]
+        [Tooltip("The damage each bullet does")]
         [SerializeField] private float damage;
-        [Tooltip("Maximum amount ammo that can be loaded")]
+        [Tooltip("The maximum amount ammo loaded")]
         [SerializeField] private float maxAmmo;
-        [Tooltip("Length of time it takes to reload a shell.")]
+        [Tooltip("How long it takes to reload a shell")]
         [SerializeField] private float reloadTime;
-        [Tooltip("Amount of pellets in each shell.")]
+        [Tooltip("How many pellets are in a shell")]
         [SerializeField] private float pelletsPerShot;
-        [Tooltip("Distance pellets deviate.")]
+        [Tooltip("Distance pellets deviate")]
         [SerializeField] private float inaccuracyDeviation;
-        [Tooltip("Cooldown between shots in seconds.")]
+        [Tooltip("Cooldown between shots in seconds")]
         [SerializeField] private float fireRate;
-        [Tooltip("Pellet trail length.")]
+        [Tooltip("Pellet trail length")]
         [Range(0f, 1f)]
         [SerializeField] private float pelletTrail = 0.15f;
 
@@ -49,7 +49,6 @@ namespace game
 
         private List<TrailData> lineRenderers = new List<TrailData>();
 
-        // Calls shoot based on player input
         public void OnShoot(InputAction.CallbackContext context)
         {
             Debug.Log($"Shooting {context.performed}");
@@ -65,7 +64,6 @@ namespace game
             
         }
 
-        // Calls reload based on player input
         public void OnReload(InputAction.CallbackContext context)
         {
             Debug.Log($"Reloading {context.performed}");
@@ -75,19 +73,15 @@ namespace game
             }
         }
 
-        // Fires the players weapon
         public void Shoot()
         {
             reloading = false;
-            // Decreases ammo
-            currentAmmo--;
+            currentAmmo--; // Decreases ammo
             UpdateAmmoUI();
-            // Gun shot sound effect
-            GameManager.instance.SoundManager.PlaySound(SoundType.GUNSHOT);
+            GameManager.instance.SoundManager.PlaySound(SoundType.GUNSHOT); // Gunshot sound effect
             Debug.Log("Ammo spent");
 
-            // Uncomment code for consistent middle pellet
-            for (int i = 0; i < pelletsPerShot /* -1 */; i++) 
+            for (int i = 0; i < pelletsPerShot /* -1 */; i++) // Uncomment code for consistent middle pellet
             {
                 if (Physics.Raycast(camTrans.position, GetShootingDirection(), out RaycastHit hit))
                 {
@@ -132,14 +126,12 @@ namespace game
             reloading = true;
         }
 
-        // Sets initial ammo
         private void Start()
         {
             currentAmmo = maxAmmo;
             UpdateAmmoUI();
         }
 
-        // Starts reloading process
         private void Update()
         {
             if (reloading && !reloadCouroutine)
@@ -149,8 +141,6 @@ namespace game
             }
         }
 
-        // Handles the removal of trails
-        // NOTE: Likely needs adustment based on what the trails look like now
         private void FixedUpdate() 
         {
             for (int i = lineRenderers.Count - 1; i >= 0; i--)
@@ -188,7 +178,7 @@ namespace game
         }
 
         // Reloads ammo every reloadTime seconds
-        private IEnumerator Reloader()
+        IEnumerator Reloader()
         {
             reloadCouroutine = true;
             while(reloading && currentAmmo < maxAmmo)
@@ -231,29 +221,21 @@ namespace game
             lineRenderers.Add(data);
         }
 
-        // Helper class for destroying bullet trails
-        private class TrailData 
+        private class TrailData // Helper class for destroying bullet trails
         {
-            // Line renderer to trail
             public LineRenderer lr;
-            // How long trails last for
             public float lifeTimer;
-            // Remaining time trail will last
             public float lifeTime;
 
-            // Initial color of trail
             public Color startColor;
-            // Color trail fades into
             public Color endColor;
         }
 
-        // Updates ammo UI
         private void UpdateAmmoUI()
         {
             ammoText.text = currentAmmo + " / " + maxAmmo;
         }
 
-        // Changes fire rate
         public void ChangeFireRate()
         {
             fireRate = fireRate * 2;

@@ -11,13 +11,12 @@ namespace game
         [Tooltip("Damage the projectile does.")]
         [SerializeField] protected float damage = 5f;
 
-        // Rigidbody of projectile
+        // Rigidbody of the projectile
         private Rigidbody rb;
 
-        // Assigns rigidbody
         private void Awake()
         {
-            
+            // Assigns rigidbody
             rb = GetComponent<Rigidbody>();
         }
 
@@ -33,7 +32,6 @@ namespace game
             Destroy(gameObject, lifetime);
         }
 
-        // When the projectiles collides with the player, they take damage and the projectile is destroyed
         private void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.CompareTag("Player"))
@@ -41,8 +39,15 @@ namespace game
                 Debug.Log("The player has been hit!");
                 collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
             }
-
-            Destroy(gameObject);
+            else
+            {
+                //Debug.Log("A projectile has hit " + collision.collider.gameObject.name);
+            }
+            if (!collision.gameObject.CompareTag("Enemy"))
+            {
+                Destroy(gameObject);
+            }
+            
         }
     }
 }

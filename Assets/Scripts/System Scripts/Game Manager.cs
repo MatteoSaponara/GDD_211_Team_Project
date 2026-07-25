@@ -11,25 +11,20 @@ namespace game
         // Singleton pattern
         public static GameManager instance;
 
-        [Header("References")]
-        [Tooltip("Reference to the player object.")]
         public GameObject player;
 
+        public bool isPaused;
         public SoundManager SoundManager => soundManager;
         public WaveManager WaveManager => waveManager;
         public ChallengeManager ChallengeManager => challengeManager;
 
-        [Tooltip("Sound manager that plays all of the game's sounds.")]
+        [Tooltip("Sound manager that plays all of the game's sounds")]
         [SerializeField] private SoundManager soundManager;
-        [Tooltip("Wave manager to handle enemy waves.")]
+        [Tooltip("Wave manager to handle enemy waves")]
         [SerializeField] private WaveManager waveManager;
-        [Tooltip("Challenge manager to handle enemy waves.")]
+        [Tooltip("Challenge manager to handle enemy waves")]
         [SerializeField] private ChallengeManager challengeManager;
-        [Space]
-        [Tooltip("Determines if the game is paused.")]
-        public bool isPaused;
 
-        // Sets GameManager instance and player reference
         private void Awake()
         {
             if (instance == null)
@@ -45,7 +40,6 @@ namespace game
             player = GameObject.FindWithTag("Player");
         }
 
-        // Assigns player reference
         private void Start()
         {
             player = GameObject.FindWithTag("Player");
@@ -60,17 +54,17 @@ namespace game
             }
         }
 
-        // Initiates the game over state
+
         public void GameOver()
         {
+            // Game Over Screen
+
             Debug.Log("Game Over");
             SceneManager.LoadScene(SceneManager.GetActiveScene().name); // to be replaced with an actual game over screen
             isPaused = false;
         }
 
-        // Pauses the game
-        // NOTE: Function either doesn't work, or it need to be reestablished in new scenes, either way need some touch ups
-        public void OnPause(InputAction.CallbackContext context)
+        public void OnPause(InputAction.CallbackContext context) // Pauses the game
         {
             if (context.performed)
             {
