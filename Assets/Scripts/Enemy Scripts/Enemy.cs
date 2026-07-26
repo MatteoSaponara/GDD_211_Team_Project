@@ -24,10 +24,11 @@ namespace game
         [Tooltip("Length of damage flash.")]
         [SerializeField] private float flashDuration = 0.1f;
 
-        protected Rigidbody rb; // Rigidbody of enemy
+        // Rigidbody of enemy
+        protected Rigidbody rb;
 
         // Mesh renderer of GameObject
-        private Renderer rend;
+        private SkinnedMeshRenderer rend;
 
         // Original color of GameObject
         private Color originalColor;
@@ -39,6 +40,9 @@ namespace game
 
         // Determines if the enemy is dead
         protected bool isDead = false;
+
+        // Coroutine for damage flash
+        private Coroutine flashCoroutine;
 
         public virtual void Awake()
         {
@@ -56,11 +60,11 @@ namespace game
                 Debug.Log("Player found by enemy");
             }
 
-            // Get mesh renderer reference
-            rend = GetComponent<MeshRenderer>();
+            // Get mesh renderer reference from model
+            rend = GetComponentInChildren<SkinnedMeshRenderer>();
+
             if (rend == null)
             {
-                
                 Debug.Log("Mesh renderer was not found");
             }
             else
@@ -127,16 +131,31 @@ namespace game
         // Makes the GameObject flash a color
         private IEnumerator DoFlash()
         {
-            rend.material.color = flashColor;
+
+            foreach (Material mat in rend.materials)
+            {
+                mat.EnableKeyword("_EMISSION");
+                mat.SetColor("_EmissionColor", flashColor * 5f);
+            }
+
             yield return new WaitForSeconds(flashDuration);
-            rend.material.color = originalColor;
+
+            foreach (Material mat in rend.materials)
+            {
+                mat.SetColor("_EmissionColor", Color.black);
+            }
         }
 
         // Calls DoFlash courtine
         public void Flash()
         {
-            StopCoroutine("DoFlash");
-            StartCoroutine(DoFlash());
+
+            if (flashCoroutine != null)
+            {
+                StopCoroutine(flashCoroutine);
+            }
+
+            flashCoroutine = StartCoroutine(DoFlash());
         }
     }
 }
