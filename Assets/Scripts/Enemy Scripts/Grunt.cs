@@ -9,6 +9,8 @@ namespace game
         [SerializeField] private Transform firePoint;
         [Tooltip("Prefab of projectile.")]
         [SerializeField] private GameObject projectilePrefab;
+        [Tooltip("Dialogue UI functionality")]
+        [SerializeField] private EnemyDialogue dialogue;
 
         [Header("Shooting")]
         [Tooltip("Firerate of enemy projectiles.")]
@@ -19,6 +21,11 @@ namespace game
 
         // Cooldown between shots
         private float fireTimer;
+
+        public override void Start()
+        {
+            dialogue.Speak("oo oo aa! oo oo aa! KILL HIM!", 2f);
+        }
 
         // Determines if the grunt should be walking towards or shooting at the player
         public override void Update()
