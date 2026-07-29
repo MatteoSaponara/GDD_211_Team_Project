@@ -66,7 +66,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 25, y: 6.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3531288823785380732
 CanvasRenderer:
@@ -123,11 +123,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.05
+  m_fontSize: 2.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 0.2
   m_fontSizeMax: 143.14
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -366,7 +366,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 25, y: 6.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &802169563030621684
 CanvasRenderer:
@@ -454,6 +454,7 @@ GameObject:
   - component: {fileID: 6564462219642405944}
   - component: {fileID: 1099462127247912847}
   - component: {fileID: 6190111162423080803}
+  - component: {fileID: 176551303251162547}
   m_Layer: 6
   m_Name: Grunt
   m_TagString: Enemy
@@ -577,6 +578,7 @@ MonoBehaviour:
   flashDuration: 0.1
   firePoint: {fileID: 6360550579984451703}
   projectilePrefab: {fileID: 25310319884533749, guid: d003af0e9cde6d54387209fa6bdb3fa4, type: 3}
+  dialogue: {fileID: 176551303251162547}
   fireRate: 1
 --- !u!114 &1099462127247912847
 MonoBehaviour:
@@ -618,6 +620,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &176551303251162547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662789286321915833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b405ce86b4fe64438d612f2f4decdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::game.EnemyDialogue
+  dialoguePanel: {fileID: 1415306937351963277}
+  dialogueText: {fileID: 8823426759856820509}
 --- !u!1 &1735182192347259578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,14 +1119,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4082989076746041979}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.70710665, y: -0.000000022476472, z: -0.000000084293696, w: 0.7071069}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3356860312831764309}
   m_Father: {fileID: 7412223751880396926}
-  m_LocalEulerAnglesHint: {x: -68.31924, y: -1.4778719, z: 6.4241786}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &4151571954915060692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,7 +1313,7 @@ Transform:
   m_GameObject: {fileID: 5155993108985766850}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1, z: 0.25}
+  m_LocalPosition: {x: 0.8, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1656,18 +1672,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7457602417093361772}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.25}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3541113344381834384}
   m_Father: {fileID: 6457193741440102389}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1920, y: 1078.885}
-  m_SizeDelta: {x: 3840, y: 2160}
+  m_AnchoredPosition: {x: -0.84, y: 1.12}
+  m_SizeDelta: {x: 3806.26, y: 2160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &3889285208073556025
 Canvas:

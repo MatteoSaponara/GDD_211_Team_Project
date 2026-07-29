@@ -25,6 +25,7 @@ namespace game
         public override void Start()
         {
             dialogue.Speak("oo oo aa! oo oo aa! KILL HIM!", 2f);
+            base.Start();
         }
 
         // Determines if the grunt should be walking towards or shooting at the player
