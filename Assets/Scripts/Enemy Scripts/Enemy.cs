@@ -50,7 +50,8 @@ namespace game
             rb = GetComponent<Rigidbody>();
         }
 
-        private void Start()
+        // Gets player and renderer references
+        public virtual void Start()
         {
             Debug.Log("Enemy start");
             // Get player reference
