@@ -634,6 +634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::game.EnemyDialogue
   dialoguePanel: {fileID: 1415306937351963277}
   dialogueText: {fileID: 8823426759856820509}
+  letterDelay: 0.075
 --- !u!1 &1735182192347259578
 GameObject:
   m_ObjectHideFlags: 0
