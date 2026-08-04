@@ -81,7 +81,7 @@ namespace game
             GameManager.instance.SoundManager.PlaySound(SoundType.GUNSHOT); // Gunshot sound effect
             Debug.Log("Ammo spent");
 
-            for (int i = 0; i < pelletsPerShot /* -1 */; i++) // Uncomment code for consistent middle pellet
+            for (int i = 0; i < pelletsPerShot - 1; i++) // Uncomment -1 code for consistent middle pellet
             {
                 if (Physics.Raycast(camTrans.position, GetShootingDirection(), out RaycastHit hit))
                 {
@@ -104,20 +104,20 @@ namespace game
 
             }
             // Code for consistent middle pellet
-            /* if (Physics.Raycast(camTrans.position, camTrans.direction, out RaycastHit hit)) {
-             *      if (hit.collider.TryGetComponent<Enemy>(out var target))
-                    {
-                        Debug.Log("Enemy hit: " + target);
-                        target.TakeDamage(damage);
-                    }
-                    //Draw line
-                    CreateTrail(hit.point);
-             * }
-             * else
+             if (Physics.Raycast(camTrans.position, camTrans.forward, out RaycastHit midHit)) {
+                if (midHit.collider.TryGetComponent<Enemy>(out var target))
+                {
+                    Debug.Log("Enemy hit: " + target);
+                    target.TakeDamage(damage);
+                }
+                //Draw line
+                CreateTrail(midHit.point);
+             }
+             else
                {
                    CreateTrail(camTrans.position + GetShootingDirection() * 100f);
                }
-            */
+            
         }
 
         // Sets reloading to true

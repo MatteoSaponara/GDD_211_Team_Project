@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49a16ca2671c2454dba8f9dd1edd64ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::game.PlayerMovement
-  controller: {fileID: 0}
+  controller: {fileID: 1064900077738958862}
   speed: 5
   jumpHeight: 2
   gravity: -9.8
