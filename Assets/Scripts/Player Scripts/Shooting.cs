@@ -12,14 +12,14 @@ namespace game
     public class Shooting : MonoBehaviour // Asked google search result AI how to make coroutine for reloading and firerate. Asked ChatGPT for proper trail destruction
     {
         [Header("References")]
-        [Tooltip("Bullet trail visualizer")]
-        [SerializeField] private GameObject lr;
         [Tooltip("Position of muzzle where bullets visuals are fired from")]
         [SerializeField] private Transform muzzle;
         [Tooltip("Camera position where raycasts come from")]
         [SerializeField] private Transform camTrans;
         [Tooltip("Ammo UI Text")]
         [SerializeField] private TextMeshProUGUI ammoText;
+        [Tooltip("Prefab used to visualize shotgun pellets")]
+        [SerializeField] private GameObject pelletTrailPrefab;
 
         [Header("Shooting Mechanics")]
         [Tooltip("The damage each bullet does")]
@@ -30,7 +30,7 @@ namespace game
         [SerializeField] private float reloadTime;
         [Tooltip("How many pellets are in a shell")]
         [SerializeField] private float pelletsPerShot;
-        [Tooltip("Distance pellets deviate")]
+        [Tooltip("Max deviation of pellet spread")]
         [SerializeField] private float inaccuracyDeviation;
         [Tooltip("Cooldown between shots in seconds")]
         [SerializeField] private float fireRate;
@@ -46,8 +46,6 @@ namespace game
         private bool reloadCouroutine = false;
         // In game time of when gun was last fired
         private float timeOfLastShot = 0;
-
-        private List<TrailData> lineRenderers = new List<TrailData>();
 
         public void OnShoot(InputAction.CallbackContext context)
         {
@@ -81,7 +79,7 @@ namespace game
             GameManager.instance.SoundManager.PlaySound(SoundType.GUNSHOT); // Gunshot sound effect
             Debug.Log("Ammo spent");
 
-            for (int i = 0; i < pelletsPerShot /* -1 */; i++) // Uncomment code for consistent middle pellet
+            for (int i = 0; i < pelletsPerShot - 1; i++) // Uncomment -1 code for consistent middle pellet
             {
                 if (Physics.Raycast(camTrans.position, GetShootingDirection(), out RaycastHit hit))
                 {
@@ -92,32 +90,32 @@ namespace game
                         Debug.Log("Enemy hit: " + target);
                         target.TakeDamage(damage);
                         
-                    } 
+                    }
                     // Draws line
-                    CreateTrail(hit.point);
+                    CreatePelletTrail(hit.point);
 
                 }
                 else
                 {
-                    CreateTrail(camTrans.position + GetShootingDirection() * 100f);
+                    CreatePelletTrail(camTrans.position + GetShootingDirection() * 100f);
                 }
 
             }
             // Code for consistent middle pellet
-            /* if (Physics.Raycast(camTrans.position, camTrans.direction, out RaycastHit hit)) {
-             *      if (hit.collider.TryGetComponent<Enemy>(out var target))
-                    {
-                        Debug.Log("Enemy hit: " + target);
-                        target.TakeDamage(damage);
-                    }
-                    //Draw line
-                    CreateTrail(hit.point);
-             * }
-             * else
+             if (Physics.Raycast(camTrans.position, camTrans.forward, out RaycastHit midHit)) {
+                if (midHit.collider.TryGetComponent<Enemy>(out var target))
+                {
+                    Debug.Log("Enemy hit: " + target);
+                    target.TakeDamage(damage);
+                }
+                //Draw line
+                CreatePelletTrail(midHit.point);
+            }
+             else
                {
-                   CreateTrail(camTrans.position + GetShootingDirection() * 100f);
-               }
-            */
+                CreatePelletTrail(camTrans.position + GetShootingDirection() * 100f);
+            }
+            
         }
 
         // Sets reloading to true
@@ -138,42 +136,6 @@ namespace game
             {
                 Debug.Log("Starting reload couritine");
                 StartCoroutine(Reloader());
-            }
-        }
-
-        private void FixedUpdate() 
-        {
-            for (int i = lineRenderers.Count - 1; i >= 0; i--)
-            {
-                TrailData data = lineRenderers[i];
-
-                if (data.lr == null)
-                {
-                    lineRenderers.RemoveAt(i);
-                    continue;
-                }
-
-                data.lifeTimer += Time.fixedDeltaTime;
-                float t = data.lifeTimer / data.lifeTime;
-
-                // Fade out alpha
-                Color newStart = data.startColor;
-                Color newEnd = data.endColor;
-
-                newStart.a = Mathf.Lerp(data.startColor.a, 0f, t);
-                newEnd.a = Mathf.Lerp(data.endColor.a, 0f, t);
-
-                data.lr.startColor = newStart;
-                data.lr.endColor = newEnd;
-
-                // Shrinks width
-                data.lr.widthMultiplier = Mathf.Lerp(1f, 0f, t);
-
-                if (data.lifeTimer >= data.lifeTime)
-                {
-                    Destroy(data.lr.gameObject);
-                    lineRenderers.RemoveAt(i);
-                }
             }
         }
 
@@ -204,31 +166,14 @@ namespace game
             return direction.normalized;
         }
 
-        // Creates bullet trail line from muzzle
-        private void CreateTrail(Vector3 end)
+        // Creates bullet/pellet trail line from muzzle
+        private void CreatePelletTrail(Vector3 end)
         {
-            LineRenderer newLR = Instantiate(lr).GetComponent<LineRenderer>();
-            newLR.SetPositions(new Vector3[2] { muzzle.position, end });
+            GameObject pellet = Instantiate(pelletTrailPrefab, muzzle.position, Quaternion.identity);
 
-            TrailData data = new TrailData();
-            data.lr = newLR;
-            data.lifeTimer = 0f;
-            data.lifeTime = pelletTrail; // short shotgun trail
+            PelletTrail pelletTrail = pellet.GetComponent<PelletTrail>();
 
-            data.startColor = newLR.startColor;
-            data.endColor = newLR.endColor;
-
-            lineRenderers.Add(data);
-        }
-
-        private class TrailData // Helper class for destroying bullet trails
-        {
-            public LineRenderer lr;
-            public float lifeTimer;
-            public float lifeTime;
-
-            public Color startColor;
-            public Color endColor;
+            pelletTrail.Initialize(muzzle.position, end, 0.05f); // Change float to change how long the trail lasts
         }
 
         private void UpdateAmmoUI()

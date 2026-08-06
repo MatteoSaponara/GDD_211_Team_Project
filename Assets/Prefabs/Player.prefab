@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49a16ca2671c2454dba8f9dd1edd64ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::game.PlayerMovement
-  controller: {fileID: 0}
+  controller: {fileID: 1064900077738958862}
   speed: 5
   jumpHeight: 2
   gravity: -9.8
@@ -475,6 +475,7 @@ MonoBehaviour:
   muzzle: {fileID: 2870246037330821380}
   camTrans: {fileID: 2934986330981756755}
   ammoText: {fileID: 5813097203392815293}
+  pelletTrailPrefab: {fileID: 961211619186960001, guid: fefd27f1591cafa4497b172ded924676, type: 3}
   damage: 10
   maxAmmo: 6
   reloadTime: 0.5
@@ -510,7 +511,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  debugInvincibility: 0
+  debugInvincibility: 1
   healthText: {fileID: 9099285779295131659}
 --- !u!1 &3600166296721374800
 GameObject:
@@ -674,7 +675,7 @@ Transform:
   m_GameObject: {fileID: 3823086457084313514}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.198, y: 0.13, z: 0.567}
+  m_LocalPosition: {x: 0.198, y: 0.13, z: 0.529}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

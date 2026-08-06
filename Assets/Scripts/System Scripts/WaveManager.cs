@@ -31,8 +31,11 @@ namespace game
         [Tooltip("Text that displays the number of enemies left.")]
         [SerializeField] private TextMeshProUGUI enemyText;
 
+        // Number of enemies alive
         private int enemiesAlive;
+        // Number of the wave (-1)
         private int waveIndex = 0;
+        // Determines if the boss has spawned
         private bool bossSpawned = false;
 
         private void OnEnable()
