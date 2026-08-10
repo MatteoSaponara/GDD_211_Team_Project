@@ -16,8 +16,10 @@ namespace game
         [Header("Wave Settings")]
         [Tooltip("Prefab of the enemies.")]
         [SerializeField] private GameObject enemyPrefab;
-        [Tooltip("Location of enemy spawn points.")]
-        [SerializeField] private Transform[] spawnPoints;
+        [Tooltip("Locations where normal enemies can spawn.")]
+        [SerializeField] private Transform[] enemySpawnPoints;
+        [Tooltip("Location where the boss spawns.")]
+        [SerializeField] private Transform bossSpawnPoint;
         [Tooltip("Time before the next wave spawns.")]
         [SerializeField] private float timeBetweenWaves = 0.5f;
 
@@ -96,27 +98,28 @@ namespace game
             enemiesAlive += count;
             for (int i = 0; i < count; i++)
             {
-                Transform spawn = spawnPoints[Random.Range(0, spawnPoints.Length)];
+                Transform spawn = enemySpawnPoints[Random.Range(0, enemySpawnPoints.Length)];
                 Instantiate(enemyPrefab, spawn.position, spawn.rotation);
             }
             UpdateEnemyCount();
         }
 
+        // Spawns boss wave
         private void SpawnBossWave()
         {
             bossSpawned = true;
 
             // Spawn boss
-            Transform spawn = spawnPoints[0];
-            Instantiate(bossPrefab, spawn.position, spawn.rotation);
+            Instantiate(bossPrefab, bossSpawnPoint.position, bossSpawnPoint.rotation);
 
             // Spawn backup enemies
             SpawnEnemies(2);
 
-            enemiesAlive += 2;
+            enemiesAlive += 1;
             UpdateEnemyCount();
         }
 
+        // Updates Enemy UI
         private void UpdateEnemyCount()
         {
             enemyText.text = "Enemies Left: " + enemiesAlive;

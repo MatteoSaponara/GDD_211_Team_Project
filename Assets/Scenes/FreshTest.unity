@@ -283,6 +283,30 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3190593333776822093, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: bossSpawnPoint
+      value: 
+      objectReference: {fileID: 301584104}
+    - target: {fileID: 3190593333776822093, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: enemySpawnPoints.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190593333776822093, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: 'enemySpawnPoints.Array.data[0]'
+      value: 
+      objectReference: {fileID: 301584103}
+    - target: {fileID: 3190593333776822093, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: 'enemySpawnPoints.Array.data[1]'
+      value: 
+      objectReference: {fileID: 301584102}
+    - target: {fileID: 3190593333776822093, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: 'enemySpawnPoints.Array.data[2]'
+      value: 
+      objectReference: {fileID: 301584101}
+    - target: {fileID: 3190593333776822093, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: 'enemySpawnPoints.Array.data[3]'
+      value: 
+      objectReference: {fileID: 301584100}
     - target: {fileID: 3873240890369567306, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9254
@@ -373,6 +397,31 @@ PrefabInstance:
 --- !u!4 &301584099 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3873240890369567306, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+  m_PrefabInstance: {fileID: 301584098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &301584100 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5178207992494221003, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+  m_PrefabInstance: {fileID: 301584098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &301584101 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6537973636699231271, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+  m_PrefabInstance: {fileID: 301584098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &301584102 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9092620127157690149, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+  m_PrefabInstance: {fileID: 301584098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &301584103 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 432288644995742181, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+  m_PrefabInstance: {fileID: 301584098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &301584104 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7838692363282496956, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
   m_PrefabInstance: {fileID: 301584098}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &332019780
