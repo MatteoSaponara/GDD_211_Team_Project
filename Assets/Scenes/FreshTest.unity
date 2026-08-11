@@ -283,6 +283,62 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3063912510516322023, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063912510516322023, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063912510516322023, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190593333776822093, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: spawnRing
+      value: 
+      objectReference: {fileID: 1919353933}
+    - target: {fileID: 3190593333776822093, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: bossSpawnPoint
+      value: 
+      objectReference: {fileID: 301584104}
+    - target: {fileID: 3190593333776822093, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: maxSpawnRadius
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190593333776822093, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: minSpawnRadius
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190593333776822093, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: enemySpawnPoints.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190593333776822093, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: 'enemySpawnPoints.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190593333776822093, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: 'enemySpawnPoints.Array.data[1]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190593333776822093, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: 'enemySpawnPoints.Array.data[2]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190593333776822093, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: 'enemySpawnPoints.Array.data[3]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3727710116166861974, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3727710116166861974, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.68
+      objectReference: {fileID: 0}
     - target: {fileID: 3873240890369567306, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9254
@@ -339,6 +395,10 @@ PrefabInstance:
       propertyPath: debugInvincibility
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7838692363282496956, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.59
+      objectReference: {fileID: 0}
     - target: {fileID: 8568142258583268767, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.18
@@ -364,15 +424,32 @@ PrefabInstance:
     - {fileID: 3382723702040875057, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
     - {fileID: 7220857679118624410, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
     - {fileID: 2235690164235714072, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 7170817603957619813, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 962940250716356500, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 1694995713740174162, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+    - {fileID: 6780031749252958548, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3873240890369567306, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
       insertIndex: 7
       addedObject: {fileID: 1694514417}
+    - targetCorrespondingSourceObject: {fileID: 3010197505292069216, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1919353933}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
 --- !u!4 &301584099 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3873240890369567306, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+  m_PrefabInstance: {fileID: 301584098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &301584100 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3010197505292069216, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
+  m_PrefabInstance: {fileID: 301584098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &301584104 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7838692363282496956, guid: 081c7998d9bf5d544b9ceeb610091e99, type: 3}
   m_PrefabInstance: {fileID: 301584098}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &332019780
@@ -1405,6 +1482,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8916636908708068247, guid: 18c3b16230a4a9b4791a08828c11aa61, type: 3}
   m_PrefabInstance: {fileID: 1727575254}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1919353932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1919353933}
+  m_Layer: 0
+  m_Name: Spawn Ring
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1919353933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919353932}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.31, y: 0, z: 13.23}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 301584100}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2010139734
 PrefabInstance:
   m_ObjectHideFlags: 0

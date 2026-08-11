@@ -16,8 +16,14 @@ namespace game
         [Header("Wave Settings")]
         [Tooltip("Prefab of the enemies.")]
         [SerializeField] private GameObject enemyPrefab;
-        [Tooltip("Location of enemy spawn points.")]
-        [SerializeField] private Transform[] spawnPoints;
+        [Tooltip("Center of the enemy spawn ring.")]
+        [SerializeField] private Transform spawnRing;
+        [Tooltip("Minimum distance from the center that enemies can spawn.")]
+        [SerializeField] private float minSpawnRadius = 8f;
+        [Tooltip("Maximum distance from the center that enemies can spawn.")]
+        [SerializeField] private float maxSpawnRadius = 10f;
+        [Tooltip("Location where the boss spawns.")]
+        [SerializeField] private Transform bossSpawnPoint;
         [Tooltip("Time before the next wave spawns.")]
         [SerializeField] private float timeBetweenWaves = 0.5f;
 
@@ -30,6 +36,12 @@ namespace game
         [Header("UI")]
         [Tooltip("Text that displays the number of enemies left.")]
         [SerializeField] private TextMeshProUGUI enemyText;
+
+        [Header("Spawn Ring Gizmo")]
+        [Tooltip("Color of the enemy spawn ring.")]
+        [SerializeField] private Color spawnRingColor = new Color(1f, 0.5f, 0f, 0.25f);
+        [Tooltip("Controls visability of spawnRing gizmo.")]
+        [SerializeField] private bool showSpawnRing = true;
 
         // Number of enemies alive
         private int enemiesAlive;
@@ -91,35 +103,68 @@ namespace game
             }
         }
 
+        // Spawns count amount of enemies
         private void SpawnEnemies(int count)
         {
             enemiesAlive += count;
+
             for (int i = 0; i < count; i++)
             {
-                Transform spawn = spawnPoints[Random.Range(0, spawnPoints.Length)];
-                Instantiate(enemyPrefab, spawn.position, spawn.rotation);
+                Vector3 spawnPosition = GetRandomSpawnPosition();
+                Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
             }
+
             UpdateEnemyCount();
         }
 
+        // Spawns boss wave
         private void SpawnBossWave()
         {
             bossSpawned = true;
 
             // Spawn boss
-            Transform spawn = spawnPoints[0];
-            Instantiate(bossPrefab, spawn.position, spawn.rotation);
+            Instantiate(bossPrefab, bossSpawnPoint.position, bossSpawnPoint.rotation);
 
             // Spawn backup enemies
             SpawnEnemies(2);
 
-            enemiesAlive += 2;
+            enemiesAlive += 1;
             UpdateEnemyCount();
         }
 
+        // Updates Enemy UI
         private void UpdateEnemyCount()
         {
             enemyText.text = "Enemies Left: " + enemiesAlive;
+        }
+
+        // Gets a random spawn position for an enemy based on the position of spawnRing
+        private Vector3 GetRandomSpawnPosition()
+        {
+            // Pick a random angle around the spawn ring
+            float angle = Random.Range(0f, Mathf.PI * 2f);
+
+            // Pick a random distance within the spawn ring
+            float radius = Random.Range(minSpawnRadius, maxSpawnRadius);
+
+            // Convert the angle and radius into a position
+            Vector3 offset = new Vector3(Mathf.Cos(angle) * radius, 0f, Mathf.Sin(angle) * radius);
+
+            return spawnRing.position + offset;
+        }
+
+        // Displays spawnRing area
+        private void OnDrawGizmosSelected()
+        {
+            if (!showSpawnRing || spawnRing == null)
+                return;
+
+            // Draw the outer boundary of the spawn ring
+            Gizmos.color = spawnRingColor;
+            Gizmos.DrawWireSphere(spawnRing.position, maxSpawnRadius);
+
+            // Draw the inner boundary of the spawn ring
+            Gizmos.DrawWireSphere(spawnRing.position, minSpawnRadius);
         }
     }
 }
